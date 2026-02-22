@@ -1,7 +1,7 @@
 import unittest
 import queue
 
-from src.design_patterns.creational.pool import ObjectPool
+from src.python_algorithms.design_patterns.creational.pool import ObjectPool
 
 
 class TestPool(unittest.TestCase):

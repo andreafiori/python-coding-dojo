@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from src.design_patterns.creational.abstract_factory import PetShop, Dog
+from src.python_algorithms.design_patterns.creational.abstract_factory import PetShop, Dog
 
 
 class TestPetShop(unittest.TestCase):

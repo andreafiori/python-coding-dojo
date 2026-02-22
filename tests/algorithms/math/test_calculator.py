@@ -1,5 +1,5 @@
 import unittest
-from src.algorithms.math.calculator import Calculator
+from src.python_algorithms.algorithms.math.calculator import Calculator
 
 
 class CalculatorTest(unittest.TestCase):

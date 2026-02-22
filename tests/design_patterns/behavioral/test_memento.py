@@ -1,6 +1,6 @@
 import unittest
 
-from src.design_patterns.behavioral.memento import NumObj, Transaction
+from src.python_algorithms.design_patterns.behavioral.memento import NumObj, Transaction
 
 
 class MementoTest(unittest.TestCase):

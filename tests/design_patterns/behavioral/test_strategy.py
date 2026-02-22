@@ -1,6 +1,6 @@
 import unittest
 
-from src.design_patterns.behavioral.strategy import Order, on_sale_discount, ten_percent_discount
+from src.python_algorithms.design_patterns.behavioral.strategy import Order, on_sale_discount, ten_percent_discount
 
 
 class StrategyTest(unittest.TestCase):

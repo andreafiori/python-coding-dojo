@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from src.design_patterns.structural.bridge import DrawingAPI1, DrawingAPI2, CircleShape
+from src.python_algorithms.design_patterns.structural.bridge import DrawingAPI1, DrawingAPI2, CircleShape
 
 
 class BridgeTest(unittest.TestCase):

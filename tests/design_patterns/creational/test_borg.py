@@ -1,5 +1,5 @@
 import unittest
-from src.design_patterns.creational.borg import Borg, YourBorg
+from src.python_algorithms.design_patterns.creational.borg import Borg, YourBorg
 
 
 class BorgTest(unittest.TestCase):

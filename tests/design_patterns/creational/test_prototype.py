@@ -1,6 +1,6 @@
 import unittest
 
-from src.design_patterns.creational.prototype import Prototype, PrototypeDispatcher
+from src.python_algorithms.design_patterns.creational.prototype import Prototype, PrototypeDispatcher
 
 
 class TestPrototypeFeatures(unittest.TestCase):

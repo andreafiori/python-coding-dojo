@@ -1,6 +1,6 @@
 import unittest
 
-from src.design_patterns.behavioral.registry import RegistryHolder, BaseRegisteredClass
+from src.python_algorithms.design_patterns.behavioral.registry import RegistryHolder, BaseRegisteredClass
 
 class ClassRegistree(BaseRegisteredClass):
     def __init__(self, *args, **kwargs):

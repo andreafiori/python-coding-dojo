@@ -1,5 +1,5 @@
 import unittest
-from src.design_patterns.structural.adapter import Dog, Cat, Human, Car, Adapter
+from src.python_algorithms.design_patterns.structural.adapter import Dog, Cat, Human, Car, Adapter
 
 
 class ClassTest(unittest.TestCase):

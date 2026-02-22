@@ -1,5 +1,5 @@
 import unittest
-from src.algorithms.math.numbers_util import NumbersUtil
+from src.python_algorithms.algorithms.math.numbers_util import NumbersUtil
 
 
 class NumbersUtilTest(unittest.TestCase):

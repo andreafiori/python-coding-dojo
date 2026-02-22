@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from src.design_patterns.other.hsm.hsm import (
+from src.python_algorithms.design_patterns.other.hsm.hsm import (
     HierachicalStateMachine,
     UnsupportedMessageType,
     UnsupportedState,

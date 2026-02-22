@@ -1,8 +1,7 @@
-from unittest.mock import patch, Mock
-
 import pytest
 
-from src.design_patterns.behavioral.observer import Data, DecimalViewer, HexViewer
+from unittest.mock import patch, Mock
+from src.python_algorithms.design_patterns.behavioral.observer import Data, DecimalViewer, HexViewer
 
 
 @pytest.fixture
@@ -23,7 +22,7 @@ def test_one_data_change_notifies_each_observer_once(observable):
     observable.attach(DecimalViewer())
     observable.attach(HexViewer())
 
-    with patch('src.design_patterns.behavioral.observer.DecimalViewer.update', new_callable=Mock()) as mocked_update:
+    with patch('src.python_algorithms.design_patterns.behavioral.observer.DecimalViewer.update', new_callable=Mock()) as mocked_update:
         assert mocked_update.call_count == 0
         observable.data = 10
         assert mocked_update.call_count == 1

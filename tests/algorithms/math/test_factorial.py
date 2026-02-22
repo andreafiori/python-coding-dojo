@@ -1,5 +1,5 @@
 import unittest
-from src.algorithms.math.factorial import Factorial
+from src.python_algorithms.algorithms.math.factorial import Factorial
 
 
 class LeapYearsTest(unittest.TestCase):

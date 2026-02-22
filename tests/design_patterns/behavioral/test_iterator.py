@@ -1,16 +1,15 @@
-import unittest
+import pytest
 
-from src.design_patterns.behavioral.iterator import count_to
+from src.python_algorithms.design_patterns.behavioral.iterator import count_to
 
-
-class IteratorTest(unittest.TestCase):
-    def test_generator(self):
-        self.assertEqual(_build_dict_count_to_two(), ['one', 'two'])
-
-
-def _build_dict_count_to_two():
+@pytest.fixture
+def generator_list():
     # Build a dictionary with the generator values
     generator_list = []
     for number in count_to(2):
         generator_list.append(number)
     return generator_list
+
+class TestIterator:
+    def test_generator(self, generator_list):
+        assert generator_list == ['one', 'two']

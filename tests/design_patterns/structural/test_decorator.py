@@ -1,5 +1,5 @@
 import unittest
-from src.design_patterns.structural.decorator import TextTag, BoldWrapper, ItalicWrapper
+from src.python_algorithms.design_patterns.structural.decorator import TextTag, BoldWrapper, ItalicWrapper
 
 
 class TestTextWrapping(unittest.TestCase):

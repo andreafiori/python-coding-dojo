@@ -1,6 +1,6 @@
 import unittest
 
-from src.design_patterns.behavioral.mediator import User, ChatRoom
+from src.python_algorithms.design_patterns.behavioral.mediator import User, ChatRoom
 
 
 class IteratorTest(unittest.TestCase):
