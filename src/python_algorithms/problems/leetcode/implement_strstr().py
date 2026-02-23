@@ -1,28 +1,28 @@
-class Solution(object):
-    # def strStr(self, haystack, needle):
-    #     """
-    #     :type haystack: str
-    #     :type needle: str
-    #     :rtype: int
-    #     """
-    #     lsh, lsn = len(haystack), len(needle)
-    #     if lsn == 0:
-    #         return 0
-    #     pos, index = 0, 0
-    #     while index <= lsh - lsn:
-    #         if haystack[index] == needle[pos]:
-    #             backup = index
-    #             while index < lsh and pos < lsn and haystack[index] == needle[pos]:
-    #                 pos += 1
-    #                 index += 1
-    #             if pos == len(needle):
-    #                 return index - pos
-    #             index = backup
-    #         index += 1
-    #         pos = 0
-    #     return -1
+"""
+Implement strStr().
 
-    # def strStr(self, haystack, needle):
+Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+Clarification:
+
+What should we return when needle is an empty string? This is a great question to ask during an interview.
+
+For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
+
+Question: https://leetcode.com/problems/implement-strstr/
+        https://discuss.leetcode.com/topic/3576/accepted-kmp-solution-in-java-for-reference/2
+"""
+
+class Solution(object):
+    def solution_one(self, haystack: str, needle: str) -> int:
+        if not needle:
+            return 0
+        for i in range(len(haystack)):
+            if haystack[i:i+len(needle)] == needle:
+                return i
+        return -1
+
+    # def solution_one(self, haystack, needle):
     #     lsh, lsn = len(haystack), len(needle)
     #     if lsn == 0:
     #         return 0
@@ -35,9 +35,7 @@ class Solution(object):
     #         index += 1
     #     return -1
 
-    # KMP
-    # https://discuss.leetcode.com/topic/3576/accepted-kmp-solution-in-java-for-reference/2
-    def strStr(self, haystack, needle):
+    def solution_two(self, haystack, needle):
         lsh, lsn = len(haystack), len(needle)
         if lsn == 0:
             return 0
@@ -67,4 +65,3 @@ class Solution(object):
             if needle[i] != needle[j]:
                 j = next[j]
         return next
-

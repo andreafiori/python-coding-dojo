@@ -13,7 +13,7 @@ class Solution:
         l = 0
         r = 1 
         maxP = 0
-        
+
         while r<len(prices):
             #profit?
             if prices[l] < prices[r]:
@@ -22,5 +22,5 @@ class Solution:
             else:
                 l = r
             r = r+1
-            
+
         return maxP 

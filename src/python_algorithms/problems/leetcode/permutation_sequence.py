@@ -28,7 +28,6 @@ class Solution(object):
         res = [remain[step]] + self.do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)
         return res
 
-if __name__ == '__main__':
-    s = Solution()
-    print s.getPermutation(3, 2)
-    # print s.getPermutation(2, 2)
+# if __name__ == '__main__':
+#     s = Solution()
+#     print(s.getPermutation(3, 2))

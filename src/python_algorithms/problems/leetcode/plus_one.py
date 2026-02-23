@@ -1,25 +1,16 @@
-class Solution(object):
-    # def plusOne(self, digits):
-    #     """
-    #     :type digits: List[int]
-    #     :rtype: List[int]
-    #     """
-    #     ls = len(digits)
-    #     curr, pos = 1, 0
-    #     while pos < ls:
-    #         index = ls - pos - 1
-    #         curr += digits[index]
-    #         digits[index] = curr % 10
-    #         curr /= 10
-    #         if curr == 0:
-    #             # do not need to continue
-    #             break
-    #         pos += 1
-    #     if curr > 0:
-    #         digits.insert(0, curr)
-    #     return digits
+"""
+You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
 
-    def plusOne(self, digits):
+Increment the large integer by one and return the resulting array of digits.
+
+Question: https://leetcode.com/problems/plus-one/
+
+"""
+
+from typing import List
+
+class Solution(object):
+    def solution_one(self, digits):
         ls = len(digits)
         for index in reversed(range(ls)):
             if digits[index] < 9:
@@ -32,4 +23,10 @@ class Solution(object):
         digits.insert(0, 1)
         return digits
 
-
+    def solution_two(self, digits: List[int]) -> List[int]:
+        n = 0
+        for i in range(len(digits)):
+            n = (n*10) + digits[i]
+        n = n+1
+        m = list(map(int, str(n)))
+        return(m)

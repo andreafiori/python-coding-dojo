@@ -1,9 +1,11 @@
-# class Solution(object):
-#     def isValidSudoku(self, board):
-#         """
-#         :type board: List[List[str]]
-#         :rtype: bool
-#         """
+"""
+valid sudoku | leetcode 36 | https://leetcode.com/problems/valid-sudoku/
+Determine if a n^2 x n^2 Psuedo-Sudoku board is valid.
+Only the filled cells need to be validated.
+"""
+
+import collections
+
 class Solution(object):
     def isValidSudoku(self, board):
         vset = [0] * 9
@@ -23,46 +25,25 @@ class Solution(object):
                     bset[(i / 3) * 3 + j / 3] |= index
         return True
 
-    # def isValidSudoku(self, board):
-    #     if board is None:
-    #         return True
-    #     for i in range(9):
-    #         table = {}
-    #         for j in range(9):
-    #             curr = board[i][j]
-    #             if curr == '.':
-    #                 continue
-    #             else:
-    #                 try:
-    #                     table[curr] += 1
-    #                     return False
-    #                 except KeyError:
-    #                     table[curr] = 1
-    #     for j in range(9):
-    #         table = {}
-    #         for i in range(9):
-    #             curr = board[i][j]
-    #             if curr == '.':
-    #                 continue
-    #             else:
-    #                 try:
-    #                     table[curr] += 1
-    #                     return False
-    #                 except KeyError:
-    #                     table[curr] = 1
-    #     for i in range(3):
-    #         for j in range(3):
-    #             table = {}
-    #             for k in range(9):
-    #                 curr = board[i * 3 + k / 3][j * 3 + k % 3]
-    #                 if curr == '.':
-    #                     continue
-    #                 else:
-    #                     try:
-    #                         table[curr] += 1
-    #                         return False
-    #                     except KeyError:
-    #                         table[curr] = 1
-    #     return True
+    def isValidSudoku(self, board: list[list[str]]) -> bool:
+        rows = collections.defaultdict(set)
+        columns = collections.defaultdict(set)
+        squares = collections.defaultdict(set)
 
+        for i in range(len(board)):
+            for j in range(len(board[i])):
 
+                if board[i][j] == '.':
+                    continue
+
+                isInRow = board[i][j] in rows[i]
+                isInColumn = board[i][j] in columns[j]
+                isInSquare = board[i][j] in squares[(i//3, j//3)]
+                if (isInRow or isInColumn or isInSquare):
+                    return False
+
+                rows[i].add(board[i][j])
+                columns[j].add(board[i][j])
+                squares[(i//3, j//3)].add(board[i][j])
+
+        return True

@@ -1,31 +1,20 @@
+"""
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+
+Question: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+
+"""
+
+from typing import Optional
+
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 class Solution(object):
-    # def deleteDuplicates(self, head):
-    #     """
-    #     :type head: ListNode
-    #     :rtype: ListNode
-    #     """
-    #     if head is None:
-    #         return None
-    #     temp = ListNode(2147483647)
-    #     temp.next = head
-    #     pos = head
-    #     head = temp
-    #     last = head
-    #     while pos is not None:
-    #         if last.val == pos.val:
-    #             last.next = pos.next
-    #         else:
-    #             last = pos
-    #         pos = pos.next
-    #     return head.next
-
-    def deleteDuplicates(self, head):
+    def solution_one(self, head):
         if head is None:
             return None
         pos = head
@@ -34,4 +23,14 @@ class Solution(object):
                 pos.next = pos.next.next
             else:
                 pos = pos.next
+        return head
+
+    def solution_two(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        cur = head
+
+        while cur:
+            while cur.next and cur.next.val == cur .val:
+                cur.next = cur.next.next
+            cur = cur.next
+
         return head

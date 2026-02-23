@@ -1,9 +1,11 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+"""
+Same tree | leetcode 100 | https://leetcode.com/problems/same-tree/
+
+Given a root of each of the two trees, check if the trees are the exact same or not
+
+method: (DFS) inorder traversal to compare left subtree, current node and right subtree
+
+"""
 
 class Solution(object):
     def isSameTree(self, p, q):
@@ -23,3 +25,16 @@ class Solution(object):
         except:
             return False
         return False
+
+    def isSameTree(self, p, q):
+        if p is None and q is None:
+            return True
+
+        if p is None or q is None:
+            return False
+
+        lResult = self.isSameTree(p.left, q.left)
+        nResult = p.val == q.val
+        rResult = self.isSameTree(p.right, q.right)
+
+        return lResult and nResult and rResult

@@ -1,12 +1,17 @@
-# find the index of the first occurrence of a string | leetcode 28 | https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-# sliding window to match each character of the haystack with the needle; no slices.
+"""
+find the index of the first occurrence of a string | leetcode 28
 
-class Solution:
+sliding window to match each character of the haystack with the needle; no slices.
+
+https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+"""
+
+class IndexOfFirstOccurrence:
     def strStr(self, haystack: str, needle: str) -> int:
         # ----- using regex -----
         # if needle == '':
         #     return 0
-        
+
         # import re
         # match = re.search(needle, haystack)
         # return match.start() if match else -1
@@ -22,5 +27,4 @@ class Solution:
             else:
                 ptrR = ptrL + 1
                 ptrL += 1
-        
         return -1

@@ -7,7 +7,7 @@ Example:
     Input: 38
     Output: 2
     Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2.
-                 Since 2 has only one digit, return it.
+    Since 2 has only one digit, return it.
 
 Wikipedia: https://en.wikipedia.org/wiki/Digital_root
 

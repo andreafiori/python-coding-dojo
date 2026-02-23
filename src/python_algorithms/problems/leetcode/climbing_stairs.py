@@ -36,41 +36,7 @@ Base cases: With the data given, we can easily say the ways to reach level 1 = 1
 The question reduces to fibonacci sequence with starting digits being 1 and 2.
 """
 class ClimbStairs(object):
-    # def solution(self, n):
-    #     """
-    #     :type n: int
-    #     :rtype: int
-    #     """
-    #     dp = [0] * (n + 1)
-    #     dp[0] = 1
-    #     dp[1] = 1
-    #     for i in range(2, n + 1):
-    #         dp[i] = dp[i - 2] + dp[i- 1]
-    #     return dp[n]
-
-    # def solution(self, n):
-    #     if n <= 1:
-    #         return 1
-    #     dp = [1] * 2
-    #     for i in range(2, n + 1):
-    #         dp[1], dp[0] = dp[1] + dp[0], dp[1]
-    #     return dp[1]
-
-    # C = {1: 1, 2: 2}
-    # def solution(self, n):
-    #     """
-    #     :type n: int
-    #     :rtype: int
-    #     """
-    #     if n in Solution.C:
-    #         return Solution.C[n]
-    #     else:
-    #         result = Solution.C.get(n - 1, self.climbStairs(n - 1)) + \
-    #                  Solution.C.get(n - 2, self.climbStairs(n - 2))
-    #         Solution.C[n] = result
-    #         return result
-
-    def climbStairs(self, n: int) -> int:
+    def solution_one(self, n: int) -> int:
         """
         :param n: int
         :return: int
@@ -87,3 +53,11 @@ class ClimbStairs(object):
             n_minus_two_step, n_minus_one_step = n_minus_one_step, n_minus_two_step + n_minus_one_step
 
         return n_minus_one_step
+
+    def solution_two(self, n: int) -> int:
+        one, two = 1,1
+        for i in range (n-1):
+            temp = one
+            one = one +two
+            two = temp
+        return one

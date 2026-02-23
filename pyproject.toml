@@ -9,6 +9,9 @@ description = "A Python project with algorithms, design patterns, problems and t
 requires-python = ">=3.8"
 dependencies = ["pytest"]
 
+# [tool.setuptools.packages.find]
+# where = ["src"]
+
 [project.optional-dependencies]
 test = [
     "pytest>=7.0",
@@ -16,6 +19,7 @@ test = [
 ]
 
 [tool.pytest.ini_options]
+# pythonpath = ["src"]
 minversion = "7.0"
 # addopts = "-v --cov=myproject --cov-report=html"
 testpaths = ["tests"]

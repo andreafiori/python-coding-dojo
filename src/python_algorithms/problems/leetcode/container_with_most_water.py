@@ -1,23 +1,5 @@
-# class Solution(object):
-#     def maxArea(self, height):
-#         """
-#         :type height: List[int]
-#         :rtype: int
-#         """
-class Solution(object):
-#     def maxArea(self, height):
-#         # brute force
-#         ls = len(height)
-#         left, right = 0, ls - 1
-#         result = 0
-#         while left < right:
-#             result = max(min(height[left], height[right]) * (right - left), result)
-#             if height[left] > height[right]:
-#                 right -= 1
-#             else:
-#                 left += 1
-#         return result
 
+class ContainerWithMostWater(object):
     def maxArea(self, height):
         # skip some choices
         ls = len(height)

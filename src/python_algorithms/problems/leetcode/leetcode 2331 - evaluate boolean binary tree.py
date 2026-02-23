@@ -12,11 +12,11 @@ class Solution:
     def evaluateTree(self, node):
         if node.left is None and node.right is None:
             return node.val
-        
+
         if node.val == 2:
             node.val = bool(self.evaluateTree(node.left)) or bool(self.evaluateTree(node.right))
-        
+
         if node.val == 3:
             node.val = bool(self.evaluateTree(node.left)) and bool(self.evaluateTree(node.right))
-            
+
         return node.val

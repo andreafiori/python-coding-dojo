@@ -1,28 +1,17 @@
-class Solution:
-    # def searchInsert(self, nums, target):
-    #     """
-    #     :type nums: List[int]
-    #     :type target: int
-    #     :rtype: int
-    #     """
-    #     min, pos = 0, 0
-    #     max = len(nums) - 1
-    #     while min <= max:
-    #         # binary search
-    #         pos = (max + min) / 2
-    #         if nums[pos] == target:
-    #             return pos
-    #         elif nums[pos] > target:
-    #             max = pos - 1
-    #         else:
-    #             min = pos + 1
-    #     if min > pos:
-    #         # this means that target is great than pos, and target
-    #         # is not in nums
-    #         return pos + 1
-    #     return pos
+"""
 
-    def searchInsert(self, nums, target):
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+Question: https://leetcode.com/problems/search-insert-position/
+
+"""
+
+from typing import List
+
+class SearchInsertPosition:
+    def solution_one(self, nums, target):
         l, r = 0, len(nums) - 1
         while l < r:
             mid = (l + r) / 2
@@ -32,4 +21,17 @@ class Solution:
                 r = mid
         if nums[l] < target:
             return l + 1
+        return l
+
+    def solution_two(self, nums: List[int], target: int) -> int:
+        l = 0
+        r = len(nums)-1
+        while l <= r:
+            mid = (l+r)//2
+            if target == nums[mid]:
+                return mid
+            if target > nums[mid]:
+                l = mid +1
+            else:
+                r = mid - 1
         return l

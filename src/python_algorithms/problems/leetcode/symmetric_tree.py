@@ -1,9 +1,11 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+"""
+Symmetric tree | leetcode 101 | https://leetcode.com/problems/symmetric-tree/
+
+Given the root of a binary tree, check whether it is a mirror of itself
+
+Method: recursively compare two copies of the same tree
+
+"""
 
 class Solution(object):
     def isSymmetric(self, root):
@@ -14,6 +16,17 @@ class Solution(object):
         if root is None:
             return True
         return self.mirrorVisit(root.left, root.right)
+
+    def isSymmetric_two(self, root):
+        def checkSymm(copy1, copy2):
+            if copy1 is None and copy2 is None:
+                return True
+            if copy1 is None or copy2 is None:
+                return False
+
+            return (copy1.val == copy2.val) and checkSymm(copy1.left, copy2.right) and checkSymm(copy1.right, copy2.left)
+
+        return checkSymm(root, root)
 
     def mirrorVisit(self, left, right):
         if left is None and right is None:

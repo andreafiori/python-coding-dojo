@@ -1,59 +1,17 @@
-from ..leetcode.tree_node import TreeNode
+"""
+
+Binary tree inorder traversal | leetcode 94 | https://leetcode.com/problems/binary-tree-inorder-traversal/
+Method: left subtree, node, right subtree recursively
+
+"""
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 class Solution(object):
-    # def inorderTraversal(self, root):
-    #     """
-    #     :type root: TreeNode
-    #     :rtype: List[int]
-    #     """
-    #     # recursively
-    #     res = []
-    #     self.do_inorderTraversal(res, root)
-    #     return res
-    #
-    # def do_inorderTraversal(self, res, curr):
-    #     if curr is None:
-    #         return
-    #     if curr.left is not None:
-    #         self.do_inorderTraversal(res, curr.left)
-    #     res.append(curr.val)
-    #     if curr.right is not None:
-    #         self.do_inorderTraversal(res, curr.right)
-
-    # def inorderTraversal(self, root):
-    #     # iteratively, but break the tree
-    #     res = []
-    #     if root is None:
-    #         return res
-    #     queue = [root]
-    #     while len(queue) > 0:
-    #         curr = queue.pop(0)
-    #         if curr.left is None and curr.right is None:
-    #             res.append(curr.val)
-    #         else:
-    #             if curr.right is not None:
-    #                 queue.insert(0, curr.right)
-    #                 curr.right = None
-    #             queue.insert(0, curr)
-    #             if curr.left is not None:
-    #                 queue.insert(0, curr.left)
-    #                 curr.left = None
-    #     return res
-
-    # def inorderTraversal(self, root):
-    #     res = []
-    #     stack = []
-    #     while root is not None:
-    #         stack.append(root)
-    #         root = root.left
-    #         while root is None:
-    #             if len(stack) == 0:
-    #                 return res
-    #             root = stack.pop()
-    #             res.append(root.val)
-    #             root = root.right
-    #     return res
-
     @staticmethod
     def in_order_traversal(root):
         if root is None:
@@ -71,3 +29,17 @@ class Solution(object):
             if curr.left is not None:
                 stack.append(curr.left)
         return res
+
+    def inorderTraversal(self, root):
+        travList = []
+
+        def traverse(root, travList):
+            if root is None:
+                return None
+
+            traverse(root.left, travList)       # traverse left subtree and add nodes
+            travList.append(root.val)           # add this node
+            traverse(root.right, travList)      # traverse right subtree and add nodes
+
+        traverse(root, travList)
+        return travList
