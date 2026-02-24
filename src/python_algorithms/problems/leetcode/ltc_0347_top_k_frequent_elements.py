@@ -22,4 +22,3 @@ class Solution:
                     k -= len(x)
             else:
                 return k_mf
-                

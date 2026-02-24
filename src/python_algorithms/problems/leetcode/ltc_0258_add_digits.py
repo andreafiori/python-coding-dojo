@@ -13,13 +13,13 @@ Wikipedia: https://en.wikipedia.org/wiki/Digital_root
 
 """
 
-
-def add_digits(num: int) -> int:
-    """
-    Add digits
-    :type num: int
-    :rtype: int
-    """
-    while num // 10 >= 1:
-        num = sum([int(x) for x in str(num)])
-    return num
+class AddDigits(object):
+    def add(num: int) -> int:
+        """
+        Add digits
+        :type num: int
+        :rtype: int
+        """
+        while num // 10 >= 1:
+            num = sum([int(x) for x in str(num)])
+        return num

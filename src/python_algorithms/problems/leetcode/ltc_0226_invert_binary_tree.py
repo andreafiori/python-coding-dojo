@@ -14,13 +14,13 @@ class Solution:
         def dfs(root):
             if root is None:
                 return
-            
+
             if root.left is None and root.right is None:
                 return
-            
+
             root.left, root.right = root.right, root.left
             dfs(root.left)
             dfs(root.right)
-        
+
         dfs(root)
         return root

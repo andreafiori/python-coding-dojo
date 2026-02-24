@@ -2,7 +2,6 @@ import unittest
 
 from src.python_algorithms.problems.leetcode.array_of_doubled_pairs import ArrayOfDoubledPairs
 
-
 class ArrayOfDoubledPairsTest(unittest.TestCase):
     def setUp(self) -> None:
         self.s = ArrayOfDoubledPairs()

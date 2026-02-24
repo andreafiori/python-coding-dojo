@@ -6,7 +6,7 @@ class Solution:
         vocab = dict()
         seens = dict()
         sent = s.split(" ")
-        
+
         if len(sent) != len(pattern):
             return False
 

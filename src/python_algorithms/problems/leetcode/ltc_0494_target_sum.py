@@ -12,10 +12,10 @@ class Solution:
         def knapsack(n, s):
             if n == N:
                 return 1 if s == target else 0
-            
+
             if (n, s) in mem:
                 return mem[(n, s)]
-            
+
             mem[(n, s)] = knapsack(n+1, s + nums[n]) + knapsack(n+1, s - nums[n])
             return mem[(n, s)]
 

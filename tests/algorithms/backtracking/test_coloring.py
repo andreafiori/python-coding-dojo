@@ -1,5 +1,4 @@
 import pytest
-from typing import List
 
 from src.python_algorithms.algorithms.backtracking.coloring import Coloring
 

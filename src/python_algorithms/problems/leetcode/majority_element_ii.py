@@ -1,5 +1,5 @@
-class Solution(object):
-    def majorityElement(self, nums):
+class MajorityElementII(object):
+    def solution(self, nums):
         # O(1) space
         ls = len(nums)
         res = []

@@ -1,5 +1,10 @@
-# IPO | leetcode 502 | https://leetcode.com/problems/ipo/
-# min-heap to track capital and max-heap to track profits
+"""
+
+IPO | leetcode 502 | https://leetcode.com/problems/ipo/
+
+min-heap to track capital and max-heap to track profits
+
+"""
 
 import heapq
 
@@ -18,4 +23,3 @@ class Solution:
             w += -1 * heapq.heappop(maxHeap)
 
         return w
-

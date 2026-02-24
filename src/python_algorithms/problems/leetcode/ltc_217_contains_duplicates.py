@@ -4,8 +4,11 @@ Given an integer array nums, return true if any value appears at least twice in 
 Question: https://leetcode.com/problems/contains-duplicate/
 
 """
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+
+from typing import List
+
+class ContainsDuplicate:
+    def solution(self, nums: List[int]) -> bool:
       duplicates = {}
       for i in nums:
         if i in duplicates:
@@ -13,4 +16,3 @@ class Solution:
         else:
           duplicates[i] = 1
       return False
-        
