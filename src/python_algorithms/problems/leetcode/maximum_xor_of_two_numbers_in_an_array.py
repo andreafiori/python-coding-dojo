@@ -1,4 +1,4 @@
-class Solution(object):
+class MaxXorOfTwoNumbersInAnArray(object):
     def findMaximumXOR(self, nums):
         """
         :type nums: List[int]
@@ -13,8 +13,3 @@ class Solution(object):
             # if there is x y in prefixes, where x ^ y = answer ^ 1
             answer += any(answer ^ 1 ^ p in prefixes for p in prefixes)
         return answer
-
-
-if __name__ == '__main__':
-    s = Solution()
-    s.findMaximumXOR([3, 10, 5, 25, 2, 8])

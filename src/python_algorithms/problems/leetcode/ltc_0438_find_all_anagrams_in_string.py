@@ -1,5 +1,9 @@
-# find all anagrams in string | leetcode 438 | https://leetcode.com/problems/find-all-anagrams-in-a-string/
-# sliding window to track "which" substring; add ptr2 to counter, remove ptr1 from counter
+"""
+find all anagrams in string | leetcode 438 | https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+sliding window to track "which" substring; add ptr2 to counter, remove ptr1 from counter
+
+"""
 
 
 from collections import Counter

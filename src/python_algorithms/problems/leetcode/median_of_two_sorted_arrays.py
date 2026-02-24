@@ -1,4 +1,6 @@
-class Solution(object):
+import sys
+
+class MedianOfTwoSortedArray(object):
     # def findMedianSortedArrays(self, nums1, nums2):
     #     """
     #     :type nums1: List[int]
@@ -52,9 +54,3 @@ class Solution(object):
                 r = mid2 - 1
             else:
                 return (max(L1, L2) + min(R1, R2)) / 2.0
-
-
-if __name__ == '__main__':
-    # begin
-    s = Solution()
-    print s.findMedianSortedArrays([1, 1], [1, 2])

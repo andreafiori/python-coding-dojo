@@ -1,6 +1,8 @@
+"""
 # non-overlapping intervals | leetcode 435 | https://leetcode.com/problems/non-overlapping-intervals
 # sort by starting times; keep track of latest ending time; always keep interval with min end time
 
+"""
 class Solution:
     def eraseOverlapIntervals(self, intervals: list[list[int]]) -> int:
         min_intervals_to_remove = 0

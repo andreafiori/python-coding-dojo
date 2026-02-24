@@ -30,6 +30,3 @@ class Solution(object):
             for j in range(ls_col):
                 maxA = max(maxA, (right[j] - left[j]) * height[j])
         return maxA
-
-
-

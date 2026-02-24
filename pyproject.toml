@@ -5,12 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "python-coding-dojo"
 version = "0.1.0"
-description = "A Python project with algorithms, design patterns, problems and tests"
+description = "Python algorithms, design patterns, problems and unit tests"
 requires-python = ">=3.8"
 dependencies = ["pytest"]
-
-# [tool.setuptools.packages.find]
-# where = ["src"]
 
 [project.optional-dependencies]
 test = [
@@ -18,8 +15,11 @@ test = [
     "pytest-cov>=4.0"
 ]
 
+#[tool.setuptools.packages.find]
+#where = ["src"]
+
 [tool.pytest.ini_options]
 # pythonpath = ["src"]
 minversion = "7.0"
-# addopts = "-v --cov=myproject --cov-report=html"
+addopts = "-v --cov=myproject --cov-report=html"
 testpaths = ["tests"]

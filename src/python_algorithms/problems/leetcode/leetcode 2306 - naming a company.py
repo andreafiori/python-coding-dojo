@@ -20,5 +20,5 @@ class Solution:
                 common_i = len(suffix_i) - common
                 common_j = len(suffix_j) - common
                 num_distinct += common_i * common_j
-        
+
         return num_distinct

@@ -1,9 +1,3 @@
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
-
 class Solution(object):
     def merge(self, intervals):
         """
@@ -29,8 +23,3 @@ class Solution(object):
             else:
                 pos += 1
         return intervals
-
-if __name__ == '__main__':
-    # begin
-    s = Solution()
-    print s.merge([[1,3],[2,6],[8,10],[15,18]])

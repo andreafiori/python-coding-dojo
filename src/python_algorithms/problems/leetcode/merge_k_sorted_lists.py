@@ -1,8 +1,7 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution(object):
     # def mergeKLists(self, lists):
@@ -45,9 +44,6 @@ class Solution(object):
     #     last.next = None
     #     return head.next
 
-
-
-
     def mergeKLists(self, lists):
         # recursive
         if lists is None:
@@ -83,7 +79,3 @@ class Solution(object):
         if l2 is not None:
             curr.next = l2
         return head.next
-
-
-
-

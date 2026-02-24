@@ -1,5 +1,9 @@
-# single element in a sorted array | leetcode 540 | https://leetcode.com/problems/single-element-in-a-sorted-array/
-# binary search over sorted array; check if mid is even and mid is the first of the duplicates
+"""
+Single element in a sorted array | leetcode 540 | https://leetcode.com/problems/single-element-in-a-sorted-array/
+
+Binary search over sorted array; check if mid is even and mid is the first of the duplicates
+
+"""
 
 class Solution:
     def singleNonDuplicate(self, nums: list[int]) -> int:
@@ -20,5 +24,5 @@ class Solution:
                     high = mid
             else:
                 return nums[mid]
-        
+
         return nums[mid]

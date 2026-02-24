@@ -1,5 +1,9 @@
-# string compression | leetcode 443 | https://leetcode.com/problems/string-compression/
-# sliding window to keep track of a char's occurence
+"""
+String compression | leetcode 443 | https://leetcode.com/problems/string-compression/
+
+Sliding window to keep track of a char's occurence
+
+"""
 
 class Solution:
     def compress(self, chars: list[str]) -> int:
@@ -18,5 +22,5 @@ class Solution:
                         total += 1
                 ptrL = ptrR
             ptrR += 1
-            
+
         return total

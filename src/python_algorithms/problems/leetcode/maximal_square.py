@@ -58,4 +58,3 @@ class Solution(object):
                     dp[j] = 0
                 prev = temp
         return res * res
-
