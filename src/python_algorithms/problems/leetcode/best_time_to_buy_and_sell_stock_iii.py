@@ -2,7 +2,6 @@
 https://discuss.leetcode.com/topic/50360/python-dp-and-non-dp-solution
 """
 
-
 class BestTimeToBuyAndSellStock(object):
     # def maxProfit(self, prices):
     #     """

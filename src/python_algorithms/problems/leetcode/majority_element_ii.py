@@ -1,3 +1,7 @@
+"""
+
+"""
+
 class MajorityElementII(object):
     def solution(self, nums):
         # O(1) space

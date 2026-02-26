@@ -1,4 +1,4 @@
-class Solution(object):
+class MoveZeroes(object):
     # def moveZeroes(self, nums):
     #     """
     #     :type nums: List[int]
@@ -19,7 +19,7 @@ class Solution(object):
     #                 curr += 1
     #         pos += 1
 
-    def moveZeroes(self, nums):
+    def move(self, nums):
         # O(n)
         ls = len(nums)
         n_pos = 0

@@ -1,4 +1,6 @@
-# add to array form of integer | leetcode 989 | https://leetcode.com/problems/add-to-array-form-of-integer
+"""
+Add to array form of integer | leetcode 989 | https://leetcode.com/problems/add-to-array-form-of-integers
+"""
 
 class Solution:
     def addToArrayForm(self, num: list[int], k: int) -> list[int]:

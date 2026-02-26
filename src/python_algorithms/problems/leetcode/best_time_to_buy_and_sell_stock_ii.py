@@ -1,4 +1,10 @@
-class BestTimeToBuyAndSellStock(object):
+"""
+
+"""
+
+from typing import List
+
+class BestTimeToBuyAndSellStock:
     def maxProfit(self, prices):
         """
         Sum of prices[i + 1] - prices[i], if prices[i + 1] > prices[i]

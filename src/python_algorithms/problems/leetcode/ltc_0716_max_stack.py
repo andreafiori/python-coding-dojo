@@ -1,3 +1,10 @@
+"""
+https://leetcode.com/problems/max-stack/
+
+https://medium.com/@dipcoder/leetcode-716-max-stack-3c154e8ae2c4
+
+"""
+
 class MaxStack(object):
 
     def __init__(self):
@@ -7,7 +14,7 @@ class MaxStack(object):
         self.stack = []
         self.max_stack = []
 
-    def push(self, x):
+    def push(self, x: int):
         """
         :type x: int
         :rtype: void

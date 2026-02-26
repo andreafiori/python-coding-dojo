@@ -1,5 +1,9 @@
-class Solution(object):
-    def lengthOfLongestSubstringTwoDistinct(self, s):
+"""
+
+"""
+
+class LongestSubstringTwoDistincttion(object):
+    def calculate(self, s: str) -> int:
         """
         :type s: str
         :rtype: int

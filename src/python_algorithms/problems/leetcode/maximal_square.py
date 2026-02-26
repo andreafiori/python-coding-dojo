@@ -1,5 +1,5 @@
-class Solution(object):
-    # def maximalSquare(self, matrix):
+class MaximalSquare(object):
+    # def find_maximal(self, matrix):
     #     """
     #     :type matrix: List[List[str]]
     #     :rtype: int

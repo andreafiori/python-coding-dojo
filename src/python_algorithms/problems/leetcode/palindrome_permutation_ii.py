@@ -1,3 +1,7 @@
+"""
+
+"""
+
 class Solution(object):
     def generatePalindromes(self, s):
         """

@@ -3,8 +3,7 @@ Best Meeting Point
 
 """
 
-
-class BestMeetingPoint(object):
+class BestMeetingPoint:
     # def minTotalDistance(self, grid):
     #     """
     #     :type grid: List[List[int]]

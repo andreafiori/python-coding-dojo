@@ -1,5 +1,5 @@
-class Solution(object):
-    def minIncrementForUnique(self, A):
+class MinIncrementToMakeArrayUnique(object):
+    def solution(self, A):
         """
         :type A: List[int]
         :rtype: int
@@ -29,9 +29,3 @@ class Solution(object):
             right += 1
             res += right - duplicate.pop(0)
         return res
-
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.minIncrementForUnique([3, 2, 1, 2, 1, 7])
-    # print s.minIncrementForUnique([0, 2, 2])

@@ -1,7 +1,10 @@
-# n-ary tree postorder traversal | leetcode 590 | https://leetcode.com/problems/n-ary-tree-postorder-traversal/submissions/
-# method: (dfs) postorder traversal is L R N, so iterate through all children and then save node
+"""
+N-ary tree postorder traversal | leetcode 590 | https://leetcode.com/problems/n-ary-tree-postorder-traversal/submissions/
 
-# Definition for a Node.
+Method: (dfs) postorder traversal is L R N, so iterate through all children and then save node
+
+"""
+
 class Node:
     def __init__(self, val=None, children=None):
         self.val = val
@@ -13,10 +16,9 @@ class Solution:
         def dfs(root):
             if root is None:
                 return None
-        
+
             [dfs(child) for child in root.children]
             self.postTrv.append(root.val)
-            
+
         dfs(root)
         return self.postTrv
-        

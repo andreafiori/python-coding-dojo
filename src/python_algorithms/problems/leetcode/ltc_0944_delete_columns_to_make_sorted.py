@@ -1,4 +1,7 @@
-# delete columns to make sorted | leetcode 944 | https://leetcode.com/problems/delete-columns-to-make-sorted/
+"""
+Delete columns to make sorted | leetcode 944 | https://leetcode.com/problems/delete-columns-to-make-sorted/
+
+"""
 
 class Solution:
     def minDeletionSize(self, strs: list[str]) -> int:
@@ -11,5 +14,5 @@ class Solution:
                 if strs[row][col] < strs[row - 1][col]:
                     cols_d += 1
                     break
-        
+
         return cols_d

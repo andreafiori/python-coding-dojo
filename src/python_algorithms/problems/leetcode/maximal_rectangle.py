@@ -1,5 +1,12 @@
-class Solution(object):
-    def maximalRectangle(self, matrix):
+"""
+
+
+"""
+
+from typing import List
+
+class MaximalRectangle(object):
+    def find_max(self, matrix: List[List[str]]):
         """
         :type matrix: List[List[str]]
         :rtype: int

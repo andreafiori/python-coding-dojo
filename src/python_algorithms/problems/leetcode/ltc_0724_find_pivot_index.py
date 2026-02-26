@@ -9,13 +9,14 @@ Return the leftmost pivot index. If no such index exists, return -1.
 
 Question : https://leetcode.com/problems/find-pivot-index/
 
-
 """
+
+from typing import List
 
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         total = sum(nums)
-        
+
         leftSum = 0
         for i in range(len(nums)):
             rightSum = total - nums[i] - leftSum

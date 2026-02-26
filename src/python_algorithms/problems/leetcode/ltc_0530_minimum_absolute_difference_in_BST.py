@@ -16,20 +16,18 @@ class Solution:
         minDiff = float('inf')
         prevNod = None
 
-        def dfs(node):
-            nonlocal minDiff, prevNod
-            if node is None:
-                return
-
-            dfs(node.left)
-
-            if prevNod != None:
-                minDiff = min(minDiff, abs(node.val - prevNod))
-            prevNod = node.val
-
-            dfs(node.right)
-
-        dfs(root)
+        self.dfs(root, minDiff, prevNod)
         return minDiff
 
+    def dfs(self, node: TreeNode, minDiff, prevNod):
+        if node is None:
+            return
+
+        self.dfs(node.left)
+
+        if prevNod != None:
+            minDiff = min(minDiff, abs(node.val - prevNod))
+        prevNod = node.val
+
+        self.dfs(node.right)
 

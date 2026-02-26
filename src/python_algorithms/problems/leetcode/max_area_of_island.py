@@ -1,3 +1,7 @@
+"""
+
+"""
+
 from typing import List
 
 class MaxAreaOfIsland(object):

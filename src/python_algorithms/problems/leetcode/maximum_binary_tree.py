@@ -2,6 +2,8 @@
 
 """
 
+from typing import List
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -9,8 +11,8 @@ class TreeNode(object):
         self.right = None
 
 
-class Solution(object):
-    def constructMaximumBinaryTree(self, nums):
+class MaxBinaryTree(object):
+    def constructMaxBinaryTree(self, nums: List[int]):
         """
         :type nums: List[int]
         :rtype: TreeNode

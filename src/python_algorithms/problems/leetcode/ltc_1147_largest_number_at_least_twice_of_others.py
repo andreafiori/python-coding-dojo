@@ -7,7 +7,9 @@ Question: https://leetcode.com/explore/learn/card/array-and-string/201/introduct
 
 """
 
-class Solution:
+from typing import List
+
+class LargestNumberAtLeastOfOther:
     def dominantIndex(self, nums: List[int]) -> int:
         if len(nums) == 1:
             return 0

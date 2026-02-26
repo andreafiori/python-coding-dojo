@@ -1,12 +1,17 @@
-# capacity to ship packages within D days | leetcode 1011 | https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
-# binary search on a range of min and max capacity required 
-# min capacity = max(weights) and max capacity = sum(weights)
+"""
+Capacity to ship packages within D days | leetcode 1011 | https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 
-class Solution:
+Binary search on a range of min and max capacity required
+
+Min capacity = max(weights) and max capacity = sum(weights)
+
+"""
+
+class CapacityShiPackages:
     def shipWithinDays(self, weights: list[int], days: int) -> int:
         low, high = max(weights), sum(weights)
         res = high
-        
+
         # check if days required for a capacity is less than D
         def isPossible (capacity):
             daysReq = 1
@@ -28,6 +33,6 @@ class Solution:
                 high = mid - 1
             else:
                 low = mid + 1
-        
+
         return res
 

@@ -1,11 +1,13 @@
 """
 Best time to buy and sell stock
+
 """
 
+from typing import List
 
-class BestTimeToBuyAndSellStock(object):
+class BestTimeToBuyAndSellStock:
     @staticmethod
-    def maxProfit(prices):
+    def maxProfit(prices: List[int]):
         """
         :type prices: List[int]
         :rtype: int

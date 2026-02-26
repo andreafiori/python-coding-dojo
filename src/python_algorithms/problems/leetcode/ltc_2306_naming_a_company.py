@@ -1,7 +1,11 @@
-# naming a company | leetcode 2306 | https://leetcode.com/problems/naming-a-company
-# bucket by starting character to make it n(26^2.n) and compare each set with each other
+"""
+Naming a company | leetcode 2306 | https://leetcode.com/problems/naming-a-company
 
-class Solution:
+bucket by starting character to make it n(26^2.n) and compare each set with each other
+
+"""
+
+class NamingACompany:
     def distinctNames(self, ideas: list[str]) -> int:
         buckets = dict()
         num_distinct = 0
