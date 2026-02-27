@@ -7,9 +7,12 @@ For example, 121 is a palindrome while 123 is not.
 
 Question: https://leetcode.com/problems/palindrome-number/
 
+Solutions:
+    https://www.naukri.com/code360/library/palindrome-number-in-python
+
 """
 
-class Solution(object):
+class PalindromeNumber:
     def isPalindrome(self, x: int) -> bool:
         if x < 0:
             return False

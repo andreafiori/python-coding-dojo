@@ -20,7 +20,7 @@ Example 3:
 
 """
 
-class BinaryTreeLevelOrderTraversal(object):
+class BinaryTreeLevelOrderTraversal:
     def levelOrder(self, root):
         if root is None:
             return []

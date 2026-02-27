@@ -1,4 +1,4 @@
-class Solution(object):
+class FindAnagramMappings:
     def anagramMappings(self, A, B):
         """
         :type A: List[int]

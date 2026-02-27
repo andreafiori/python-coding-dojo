@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def __init__(self):
         self.base = 1337
 

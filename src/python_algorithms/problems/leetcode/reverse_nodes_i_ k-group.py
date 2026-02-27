@@ -1,17 +1,17 @@
 # Definition for singly-linked list.
-# class ListNode(object):
+# class ListNode
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
 
-# class Solution(object):
+# class Solution:
 #     def reverseKGroup(self, head, k):
 #         """
 #         :type head: ListNode
 #         :type k: int
 #         :rtype: ListNode
 #         """
-class Solution(object):
+class Solution:
     def reverseKGroup(self, head, k):
         if head is None:
             return None

@@ -7,7 +7,7 @@ Method: recursively compare two copies of the same tree
 
 """
 
-class Solution(object):
+class Solution:
     def isSymmetric(self, root):
         """
         :type root: TreeNode

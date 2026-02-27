@@ -2,7 +2,7 @@
 
 """
 
-class MajorityElementII(object):
+class MajorityElementII:
     def solution(self, nums):
         # O(1) space
         ls = len(nums)

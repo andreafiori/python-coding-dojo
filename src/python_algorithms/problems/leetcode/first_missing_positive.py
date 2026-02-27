@@ -1,4 +1,4 @@
-class Solution(object):
+class FirstMissingPositive:
     def firstMissingPositive(self, nums):
         """
         :type nums: List[int]

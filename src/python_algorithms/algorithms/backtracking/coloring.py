@@ -6,7 +6,7 @@ such that no adjacent vertices are assigned the same color
 Wikipedia: https://en.wikipedia.org/wiki/Graph_coloring
 """
 
-class Coloring(object):
+class Coloring:
     def valid_coloring(
         self, neighbours: list[int], colored_vertices: list[int], color: int
     ) -> bool:

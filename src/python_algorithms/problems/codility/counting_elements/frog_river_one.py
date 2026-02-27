@@ -62,7 +62,7 @@ Complexity:
 Elements of input arrays can be modified.
 """
 
-class FrogRiverOne(object):
+class FrogRiverOne:
     N_RANGE = (1, 100000)
 
     def solution(X, A):

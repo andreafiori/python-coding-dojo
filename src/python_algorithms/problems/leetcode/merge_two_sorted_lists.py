@@ -16,7 +16,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-class Solution(object):
+class MergeTwoSortedLists:
     def solution_one(self, l1, l2):
         # dummy head
         pos = dummyHead = ListNode(-1)

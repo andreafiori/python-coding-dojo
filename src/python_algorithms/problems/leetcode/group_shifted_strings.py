@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def groupStrings(self, strings):
         """
         :type strings: List[str]

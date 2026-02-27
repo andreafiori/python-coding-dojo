@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 """
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -38,7 +38,7 @@ Example 2:
     Return false.
 
 """
-class BalancedBinaryTree(object):
+class BalancedBinaryTree:
     def isBalanced(self, root):
         """
         :type root: TreeNode

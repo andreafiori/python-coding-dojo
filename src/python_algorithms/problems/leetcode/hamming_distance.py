@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def hammingDistance(self, x, y):
         """
         :type x: int

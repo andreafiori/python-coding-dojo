@@ -1,4 +1,8 @@
-class Solution(object):
+"""
+
+"""
+
+class FlipGame:
     def generatePossibleNextMoves(self, s):
         """
         :type s: str

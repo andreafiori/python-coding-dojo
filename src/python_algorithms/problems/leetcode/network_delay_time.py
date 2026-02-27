@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def networkDelayTime(self, times, N, K):
     #     # DFS
     #     graph = collections.defaultdict(list)

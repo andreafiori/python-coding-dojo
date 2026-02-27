@@ -1,7 +1,7 @@
 """
 Date and time utilities
 """
-class DateUtils(object):
+class DateUtils:
     @staticmethod
     def is_leap_year(year):
         return DateUtils.__check_divisible_100_400(year) if (year % 4) == 0 else False

@@ -126,7 +126,7 @@ Complexity:
 Elements of input arrays can be modified.
 """
 
-class MinAvgTwoSlice(object):
+class MinAvgTwoSlice:
     RANGE_A = (2, 100000)
     RANGE_N = (-10000, 10000)
 

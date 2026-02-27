@@ -31,7 +31,7 @@ https://leetcode.com/problems/two-sum
 
 from typing import List
 
-class TwoSum(object):
+class TwoSum
     def solution(self, nums, target):
         # two point
         nums_index = [(v, index) for index, v in enumerate(nums)]

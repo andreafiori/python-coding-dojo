@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # https://leetcode.com/problems/convert-bst-to-greater-tree/solution/
     # def __init__(self):
     #     self.total = 0

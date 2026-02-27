@@ -6,7 +6,7 @@ https://en.wikipedia.org/wiki/Narcissistic_number
 """
 
 
-class ArmstrongNumber(object):
+class ArmstrongNumber:
     def is_armstrong_number(self, num):
         # Changed num variable to string, and calculated the length (number of digits)
         order = len(str(num))

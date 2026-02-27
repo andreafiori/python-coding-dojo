@@ -7,7 +7,7 @@ method: (DFS) inorder traversal to compare left subtree, current node and right 
 
 """
 
-class Solution(object):
+class Solution:
     def isSameTree(self, p, q):
         """
         :type p: TreeNode

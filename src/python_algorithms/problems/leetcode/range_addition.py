@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def getModifiedArray(self, length, updates):
         """
         :type length: int

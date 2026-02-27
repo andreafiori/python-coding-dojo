@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     #https://discuss.leetcode.com/topic/20094/my-c-solutions-recursion-with-cache-dp-recursion-with-cache-and-pruning-with-explanation-4ms/2
     # def isScramble(self, s1, s2):
     #     """

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def kClosest(self, points, K):
     #     """
     #     :type points: List[List[int]]

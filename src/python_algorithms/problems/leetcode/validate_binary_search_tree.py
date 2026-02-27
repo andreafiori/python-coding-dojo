@@ -11,7 +11,7 @@ tip: use `prev` pointer instead of an array to keep space complexity as O(1)
 
 import sys
 
-class Solution(object):
+class ValidateBinarySearchTree:
     # initialise a prev pointer
     def __init__(self):
         self.prev = None

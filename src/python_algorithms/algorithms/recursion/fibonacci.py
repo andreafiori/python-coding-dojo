@@ -1,7 +1,7 @@
 """
 Fibonacci math
 """
-class Fibonacci(object):
+class Fibonacci:
     def calculate(self, n):
         """
         Function for nth Fibonacci number

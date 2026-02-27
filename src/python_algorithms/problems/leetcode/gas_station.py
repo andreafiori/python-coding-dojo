@@ -1,5 +1,7 @@
-class Solution(object):
-    def canCompleteCircuit(self, gas, cost):
+from typing import List
+
+class GasStation:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]):
         """
         :type gas: List[int]
         :type cost: List[int]
@@ -20,4 +22,3 @@ class Solution(object):
             return end
         else:
             return -1
-

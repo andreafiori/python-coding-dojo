@@ -13,7 +13,7 @@ Question: https://leetcode.com/problems/implement-strstr/
         https://discuss.leetcode.com/topic/3576/accepted-kmp-solution-in-java-for-reference/2
 """
 
-class Solution(object):
+class Solution:
     def solution_one(self, haystack: str, needle: str) -> int:
         if not needle:
             return 0

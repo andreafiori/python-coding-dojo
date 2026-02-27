@@ -1,4 +1,4 @@
-class Solution(object):
+class FriendCircles:
     def findCircleNum(self, M):
         """
         :type M: List[List[int]]
@@ -47,7 +47,7 @@ class Solution(object):
 #                     union.union(i, j)
 #         return union.count
 
-# class Union(object):
+# class Union
 #     """
 #     weighted quick union find
 #     """

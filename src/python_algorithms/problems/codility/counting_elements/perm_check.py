@@ -55,7 +55,7 @@ Complexity:
 
 Elements of input arrays can be modified.
 """
-class PermCheck(object):
+class PermCheck:
     ARR_RANGE = (1, 100000)
     INT_RANGE = (1, 1000000000)
 

@@ -1,12 +1,8 @@
-# class Solution(object):
-#     def findPeakElement(self, nums):
-#         """
-#         :type nums: List[int]
-#         :rtype: int
-#         """
+"""
+"""
 
-class Solution(object):
-    def findPeakElement(self, nums):
+class FindPeakElement:
+    def find(self, nums):
         # https://leetcode.com/discuss/88467/tricky-problem-tricky-solution
         # note that num[-1] = num[n] = -∞
         start, end = 0, len(nums) - 1
@@ -17,3 +13,9 @@ class Solution(object):
             else:
                 end = mid
         return start
+
+    #     def find(self, nums):
+    #         """
+    #         :type nums: List[int]
+    #         :rtype: int
+    #         """

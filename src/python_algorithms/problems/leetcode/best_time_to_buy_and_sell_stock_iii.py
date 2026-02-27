@@ -2,7 +2,7 @@
 https://discuss.leetcode.com/topic/50360/python-dp-and-non-dp-solution
 """
 
-class BestTimeToBuyAndSellStock(object):
+class BestTimeToBuyAndSellStock:
     # def maxProfit(self, prices):
     #     """
     #     :type prices: List[int]

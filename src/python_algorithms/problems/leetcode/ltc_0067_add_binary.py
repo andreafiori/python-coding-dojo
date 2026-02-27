@@ -23,7 +23,7 @@ Constraints:
 
 """
 
-class AddBinary(object):
+class AddBinary:
     def solution_one(self, a, b):
         """
         :type a: str

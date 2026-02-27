@@ -1,4 +1,4 @@
-class MinIncrementToMakeArrayUnique(object):
+class MinIncrementToMakeArrayUnique
     def solution(self, A):
         """
         :type A: List[int]

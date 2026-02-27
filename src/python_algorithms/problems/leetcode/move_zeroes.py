@@ -1,4 +1,4 @@
-class MoveZeroes(object):
+class MoveZeroes
     # def moveZeroes(self, nums):
     #     """
     #     :type nums: List[int]

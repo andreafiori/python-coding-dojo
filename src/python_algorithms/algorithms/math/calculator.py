@@ -1,6 +1,6 @@
 
 
-class Calculator(object):
+class Calculator:
     @staticmethod
     def add(first, second):
         return first + second

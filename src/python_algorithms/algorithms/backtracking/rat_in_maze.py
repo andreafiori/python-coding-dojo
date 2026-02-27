@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-class BacktrackingRatInMaze(object):
+class BacktrackingRatInMaze:
     """
     The "rat in maze" problem is a classic backtracking problem that involves finding a path for a rat to navigate through a maze represented as a 2D grid. The maze consists of open paths (represented by 0s) and walls (represented by 1s). The rat can move in four possible directions: up, down, left, and right. The goal is to find a path from a specified source cell to a destination cell while avoiding walls.
 

@@ -1,11 +1,11 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+class Solution:
     def hasPathSum(self, root, sum):
         """
         :type root: TreeNode

@@ -2,7 +2,7 @@
 
 """
 
-class Solution(object):
+class Solution:
     def generatePalindromes(self, s):
         """
         :type s: str

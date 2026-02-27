@@ -1,5 +1,9 @@
-class Solution(object):
-    # def fixedPoint(self, A):
+"""
+
+"""
+
+class FixedPoint:
+    # def fix(self, A):
     #     """
     #     :type A: List[int]
     #     :rtype: int
@@ -11,7 +15,7 @@ class Solution(object):
     #         elif index < value:
     #             return -1
 
-    def fixedPoint(self, A):
+    def fix(self, A):
         l, h = 0, len(A) - 1
         while l <= h:
             mid = (l + h) // 2

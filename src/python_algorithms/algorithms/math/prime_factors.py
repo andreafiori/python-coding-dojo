@@ -1,7 +1,7 @@
 import math
 
 
-class PrimeFactors(object):
+class PrimeFactors:
     @staticmethod
     def get_prime_numbers(n):
         """

@@ -1,4 +1,8 @@
-class Solution:
+"""
+
+"""
+
+class JumpGameII:
     def jump(self, nums):
         """
         :type nums: List[int]

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from itertools import combinations
 
-class BacktrackingAllCombinations(object):
+class BacktrackingAllCombinations:
 
     def combination_lists(self, n: int, k: int) -> list[list[int]]:
         """

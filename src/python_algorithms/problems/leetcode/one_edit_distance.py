@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def isOneEditDistance(self, s, t):
         """
         :type s: str

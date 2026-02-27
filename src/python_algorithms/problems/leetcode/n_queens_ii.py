@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def totalNQueens(self, n):
     #     """
     #     :type n: int

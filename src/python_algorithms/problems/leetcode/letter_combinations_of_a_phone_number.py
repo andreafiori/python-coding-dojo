@@ -1,4 +1,4 @@
-# class Solution(object):
+# class Solution:
 #     def letterCombinations(self, digits):
 #         """
 #         :type digits: str
@@ -15,7 +15,7 @@ dmap = {'2': 'abc',
         '0': ' ',
         None: None}
 
-class Solution(object):
+class Solution:
     def letterCombinations(self, digits):
         # DFS
         result = []

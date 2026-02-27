@@ -1,5 +1,8 @@
+"""
+"""
+
 import string
-class Solution(object):
+class WordLadder:
     def ladderLength(self, beginWord, endWord, wordList):
         """
         :type beginWord: str

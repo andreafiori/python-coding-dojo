@@ -1,4 +1,9 @@
-class Solution(object):
+"""
+"""
+
+import collections
+import heapq
+class TopKFrequentWords:
 #     def topKFrequent(self, words, k):
 #         """
 #         :type words: List[str]

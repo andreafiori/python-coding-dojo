@@ -5,7 +5,7 @@
 
 from typing import List
 
-class MaximalRectangle(object):
+class MaximalRectangle
     def find_max(self, matrix: List[List[str]]):
         """
         :type matrix: List[List[str]]

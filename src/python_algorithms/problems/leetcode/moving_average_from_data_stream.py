@@ -1,4 +1,4 @@
-class MovingAverage(object):
+class MovingAverage
 
     def __init__(self, size):
         """

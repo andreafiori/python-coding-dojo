@@ -1,6 +1,6 @@
 from ..leetcode.tree_node import TreeNode
 
-class Solution(object):
+class Solution:
     # def __init__(self):
     #     self.result = []
     #

@@ -1,5 +1,5 @@
-class Solution(object):
-    def validWordSquare(self, words):
+class ValidWordSquare:
+    def solution(self, words):
         """
         :type words: List[str]
         :rtype: bool

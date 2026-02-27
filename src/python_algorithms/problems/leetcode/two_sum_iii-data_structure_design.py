@@ -1,4 +1,4 @@
-class TwoSum(object):
+class TwoSum
 
     def __init__(self):
         """

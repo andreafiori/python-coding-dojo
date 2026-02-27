@@ -6,7 +6,7 @@ https://leetcode.com/discuss/86650/fantastic-clean-java-dp-solution-with-detail-
 
 """
 
-class UniqueBinarySearchTrees(object):
+class UniqueBinarySearchTrees
     def numTrees(self, n):
         """
         :type n: int

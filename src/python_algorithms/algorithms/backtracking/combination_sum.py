@@ -11,7 +11,7 @@ Constraints:
 All elements of candidates are distinct.
 1 <= target <= 40
 """
-class CombinationSum(object):
+class CombinationSum:
     def backtrack(
         self, candidates: list, path: list, answer: list, target: int, previous_index: int
     ) -> None:

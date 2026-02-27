@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def transpose(self, A):
         """
         :type A: List[List[int]]

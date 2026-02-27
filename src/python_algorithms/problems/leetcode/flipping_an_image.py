@@ -1,4 +1,7 @@
-class Solution(object):
+"""
+"""
+
+class FlippingAnImage:
     def flipAndInvertImage(self, A):
         for row in A:
             for i in range((len(row) + 1) / 2):

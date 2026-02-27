@@ -16,7 +16,7 @@ Example 2:
     Output: 4
 
 """
-class SingleNumber(object):
+class SingleNumber
     # def solution(self, nums):
     #     """
     #     :type nums: List[int]

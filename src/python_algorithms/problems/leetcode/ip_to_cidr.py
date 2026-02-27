@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def ipToInt(self, ip):
         ans = 0
         for x in ip.split('.'):

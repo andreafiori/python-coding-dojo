@@ -1,4 +1,4 @@
-class TreeNode(object):
+class TreeNode
     def __init__(self, x):
         """
         Definition for a binary tree node.

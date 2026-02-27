@@ -3,7 +3,7 @@
 # @return an integer
 # def read4(buf):
 
-class Solution(object):
+class Solution:
 
     def __init__(self):
         self.buff = [''] * 4

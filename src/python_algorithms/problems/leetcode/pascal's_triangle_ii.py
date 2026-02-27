@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def getRow(self, rowIndex):
         """
         :type rowIndex: int

@@ -1,4 +1,4 @@
-class Solution(object):
+class FindMinimumInRotatedSortedArray:
     # def findMin(self, nums):
     #     """
     #     :type nums: List[int]

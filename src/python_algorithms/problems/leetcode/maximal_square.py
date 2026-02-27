@@ -1,4 +1,4 @@
-class MaximalSquare(object):
+class MaximalSquare
     # def find_maximal(self, matrix):
     #     """
     #     :type matrix: List[List[str]]

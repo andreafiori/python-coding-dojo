@@ -1,4 +1,8 @@
-class Solution(object):
+"""
+
+"""
+
+class MaximumProductOfThreeNumbers:
     # def maximumProduct(self, nums):
     #     """
     #     :type nums: List[int]

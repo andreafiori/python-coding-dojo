@@ -1,4 +1,8 @@
-class Solution(object):
+"""
+
+"""
+
+class RegularExpressionMatching:
     def isMatch(self, s, p):
         """
         :type s: str
@@ -27,10 +31,5 @@ class Solution(object):
                         dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1] or dp[i + 1][j - 1]
         return dp[m][n]
 
-
-if __name__ == '__main__':
-    # begin
-    s = Solution()
-    print s.isMatch("", ".*")
-
-
+    # s = Solution()
+    # print(s.isMatch("", ".*"))

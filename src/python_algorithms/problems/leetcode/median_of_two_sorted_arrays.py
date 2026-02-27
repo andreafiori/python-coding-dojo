@@ -1,6 +1,6 @@
 import sys
 
-class MedianOfTwoSortedArray(object):
+class MedianOfTwoSortedArray
     # def findMedianSortedArrays(self, nums1, nums2):
     #     """
     #     :type nums1: List[int]

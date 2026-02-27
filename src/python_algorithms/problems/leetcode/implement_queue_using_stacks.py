@@ -1,4 +1,4 @@
-# class Queue(object):
+# class Queue
 #     def __init__(self):
 #         """
 #         initialize your data structure here.
@@ -39,7 +39,7 @@
 #         """
 #         return len(self.stack1) == 0
 
-class Queue(object):
+class Queue
     def __init__(self):
         """
         initialize your data structure here.

@@ -11,7 +11,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution(object):
+class Solution:
     @staticmethod
     def in_order_traversal(root):
         if root is None:

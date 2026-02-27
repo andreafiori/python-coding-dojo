@@ -1,6 +1,8 @@
 
+"""
+"""
 
-class Solution(object):
+class BinaryTreePostorderTraversal:
     # def postorderTraversal(self, root):
     #     """
     #     :type root: TreeNode

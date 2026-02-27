@@ -1,4 +1,4 @@
-class Solution(object):
+class FlipGameII:
     # def canWin(self, s):
     #     """
     #     :type s: str

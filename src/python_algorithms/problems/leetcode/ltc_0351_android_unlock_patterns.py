@@ -15,7 +15,7 @@ https://medium.com/@rebeccahezhang/leetcode-351-android-unlock-patterns-d9bae4a8
 
 """
 
-class AndroidUnlockPatterns(object):
+class AndroidUnlockPatterns
     def solution(self, m: int, n: int):
         """
         :type m: int

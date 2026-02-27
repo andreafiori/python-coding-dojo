@@ -80,7 +80,7 @@ Complexity:
 Elements of input arrays can be modified.
 """
 
-class MaxCounters(object):
+class MaxCounters:
     MAX_INT = 100000
     INT_RANGE = (1, MAX_INT)
 

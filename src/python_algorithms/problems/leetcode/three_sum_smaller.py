@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def threeSumSmaller(self, nums, target):
     #     """
     #     :type nums: List[int]

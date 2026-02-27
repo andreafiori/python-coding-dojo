@@ -8,7 +8,7 @@ Leetcode link: https://leetcode.com/problems/generate-parentheses/description/
 """
 from src.python_algorithms.algorithms.backtracking.word_ladder import backtrack
 
-class GenerateParentheses(object):
+class GenerateParentheses:
     def backtrack(
         self, partial: str, open_count: int, close_count: int, n: int, result: list[str]
     ) -> None:

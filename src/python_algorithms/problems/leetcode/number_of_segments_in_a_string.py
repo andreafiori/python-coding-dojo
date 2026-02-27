@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # https://leetcode.com/problems/number-of-segments-in-a-string/solution/
     # def countSegments(self, s):
     #     """

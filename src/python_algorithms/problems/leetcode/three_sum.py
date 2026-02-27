@@ -39,7 +39,7 @@ Hint 3:
 
 """
 
-class ThreeSum(object):
+class ThreeSum
     # def threeSum(self, nums):
     #     # skip duplicate
     #     # O(n^3)

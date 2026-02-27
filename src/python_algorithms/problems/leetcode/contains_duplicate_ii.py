@@ -1,4 +1,4 @@
-class Solution(object):
+class ContainsDuplicateII:
     # def containsNearbyDuplicate(self, nums, k):
     #     """
     #     :type nums: List[int]

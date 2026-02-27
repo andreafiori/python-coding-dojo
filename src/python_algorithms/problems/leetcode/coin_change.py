@@ -1,4 +1,4 @@
-class Solution(object):
+class CoinChange:
     # def coinChange(self, coins, amount):
     #     """
     #     :type coins: List[int]

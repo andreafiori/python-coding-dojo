@@ -7,7 +7,7 @@ is the 'Hamiltonian path problem', which is NP-complete.
 Wikipedia: https://en.wikipedia.org/wiki/Hamiltonian_path
 """
 
-class HamiltonianCycle(object):
+class HamiltonianCycle:
     def valid_connection(
         self, graph: list[list[int]], next_ver: int, curr_ind: int, path: list[int]
     ) -> bool:

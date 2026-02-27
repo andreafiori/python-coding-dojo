@@ -13,7 +13,7 @@ Question: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 from ast import List
 
-class Solution(object):
+class Solution:
     def solution_one(self, nums):
         if len(nums) == 0:
             return 0

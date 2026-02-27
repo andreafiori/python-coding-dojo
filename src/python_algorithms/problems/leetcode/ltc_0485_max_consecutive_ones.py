@@ -20,7 +20,7 @@ Constraints:
 
 from typing import List
 
-class FindMaxConsecutiveOnes(object):
+class FindMaxConsecutiveOnes
     def solution(self, nums: List[int]):
         """
         :type nums: List[int]

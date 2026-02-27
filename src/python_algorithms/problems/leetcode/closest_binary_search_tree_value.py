@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # from ..leetcode.tree_node import TreeNode
     # def closest_value(self, root, target):
     #     """
@@ -9,7 +9,6 @@ class Solution(object):
     #     # brute force, Search all
     #     return self.closestValue_helper(root, target, 21474483647)
 
-    
     # def closest_value_helper(self, root, target, curr_min):
     #     if root is None:
     #         return curr_min

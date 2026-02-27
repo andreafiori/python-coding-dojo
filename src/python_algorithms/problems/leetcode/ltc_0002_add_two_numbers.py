@@ -30,7 +30,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-class AddTwoNumbers(object):
+class AddTwoNumbers
     def solution_one(self, l1: list[ListNode], l2: list[ListNode]) -> list[ListNode]:
         res = ListNode()
         head = res

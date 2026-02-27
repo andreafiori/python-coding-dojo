@@ -1,6 +1,6 @@
 
 import random
-class Solution(object):
+class Solution:
     def findKthLargest(self, nums, k):
         # shuffle nums to avoid n*n
         random.shuffle(nums)

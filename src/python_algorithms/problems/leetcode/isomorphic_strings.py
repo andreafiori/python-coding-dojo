@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def isIsomorphic(self, s, t):
     #     """
     #     :type s: str

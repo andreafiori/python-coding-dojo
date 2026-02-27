@@ -1,5 +1,5 @@
-class Solution(object):
-    # def floodFill(self, image, sr, sc, newColor):
+class FloodFill:
+    # def fill(self, image, sr, sc, newColor):
     #     """
     #     :type image: List[List[int]]
     #     :type sr: int
@@ -23,7 +23,7 @@ class Solution(object):
     #     dfs(sr, sc)
     #     return image
 
-    def floodFill(self, image, sr, sc, newColor):
+    def fill(self, image, sr, sc, newColor):
         # BFS with queue
         r_ls, c_ls = len(image), len(image[0])
         color = image[sr][sc]

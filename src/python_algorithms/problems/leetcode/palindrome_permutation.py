@@ -2,7 +2,7 @@
 
 """
 
-class PalindromePermutation(object):
+class PalindromePermutation
     def canPermutePalindrome(self, s):
         """
         :type s: str

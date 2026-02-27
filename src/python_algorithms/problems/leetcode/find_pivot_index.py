@@ -1,5 +1,8 @@
-class Solution(object):
-    def pivotIndex(self, nums):
+"""
+"""
+
+class FindPivotIndex:
+    def find(self, nums):
         """
         :type nums: List[int]
         :rtype: int

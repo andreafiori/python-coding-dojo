@@ -6,7 +6,7 @@ Keep track of max freq in sliding window and check if size of window - max freq 
 
 """
 
-class LongestRepeatingCharacterReplacement(object):
+class LongestRepeatingCharacterReplacement
     def solution(self, s: str, k: int) -> int:
         ptrL = 0
         ptrR = 0

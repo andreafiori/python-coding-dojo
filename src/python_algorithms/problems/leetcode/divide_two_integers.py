@@ -1,15 +1,10 @@
-# class Solution(object):
-#     def divide(self, dividend, divisor):
-#         """
-#         :type dividend: int
-#         :type divisor: int
-#         :rtype: int
-#         """
+"""
+
+"""
 
 import math
 
-
-class Solution(object):
+class DivideTwoIntegers:
     MAX_INT = int(100000)
 
     def divide(self, dividend, divisor):
@@ -41,7 +36,9 @@ class Solution(object):
     #         return min(result, 2147483647)
     #     return max(-result, -2147483648)
 
-"""
-s = Solution()
-print s.divide(1, 1)
-"""
+    #     def divide(self, dividend, divisor):
+    #         """
+    #         :type dividend: int
+    #         :type divisor: int
+    #         :rtype: int
+    #         """

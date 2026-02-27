@@ -19,7 +19,7 @@ Constraints:
 
 """
 
-class Solution(object):
+class Solution:
     def nthUglyNumber(self, n):
         """
         :type n: int

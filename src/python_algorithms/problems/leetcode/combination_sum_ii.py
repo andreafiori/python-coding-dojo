@@ -1,4 +1,7 @@
-class Solution(object):
+"""
+"""
+
+class CombinationSumII:
     def combinationSum2(self, candidates, target):
         """
         :type candidates: List[int]

@@ -1,4 +1,4 @@
-class ValidWordAbbr(object):
+class ValidWordAbbr
     def __init__(self, dictionary):
         """
         initialize your data structure here.

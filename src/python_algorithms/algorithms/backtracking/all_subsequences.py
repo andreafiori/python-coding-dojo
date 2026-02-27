@@ -9,7 +9,7 @@ where n denotes the length of the given sequence.
 from __future__ import annotations
 from typing import Any
 
-class BacktrackingAllSubsequences(object):
+class BacktrackingAllSubsequences:
     def generate_all_subsequences(self, sequence: list[Any]) -> None:
         self.create_state_space_tree(sequence, [], 0)
 

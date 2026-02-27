@@ -1,10 +1,10 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
 
-class Solution(object):
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class PalindromeLinkedList:
     # def __init__(self):
     #     self.curr_head = None
     #
@@ -23,7 +23,7 @@ class Solution(object):
     #     self.curr_head = self.curr_head.next
     #     return isPal
 
-    def isPalindrome(self, head):
+    def isPalindrome(self, head: ListNode):
         # p2 is 2 times faster than p3
         # p1 and pre is used to reverse the first half of the list
         # so when the first while is over

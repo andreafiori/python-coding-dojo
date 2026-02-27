@@ -1,7 +1,7 @@
 """
 URL: https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 """
-class BinaryGap(object):
+class BinaryGap:
 
     # the largest integer we have to deal with
     MAXINT = 2147483647

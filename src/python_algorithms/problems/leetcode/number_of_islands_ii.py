@@ -1,5 +1,5 @@
-class Solution(object):
-    def numIslands2(self, m, n, positions):
+class NumberOfIslandsII:
+    def numIslands2(self, positions):
         """
         :type m: int
         :type n: int
@@ -18,7 +18,7 @@ class Solution(object):
             ans += [islands.count]
         return ans
 
-class Union(object):
+class Union:
     """
     quick union find with weights
     """

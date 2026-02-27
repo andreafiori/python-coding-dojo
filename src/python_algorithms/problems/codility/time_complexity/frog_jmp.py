@@ -1,4 +1,4 @@
-class FrogImp(object):
+class FrogImp:
     INT_RANGE = (1, 1000000000)
 
     def solution(self, X, Y, D):

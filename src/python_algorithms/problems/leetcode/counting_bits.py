@@ -1,4 +1,4 @@
-class Solution(object):
+class CountingBits:
     def countBits(self, num):
         """
         :type num: int

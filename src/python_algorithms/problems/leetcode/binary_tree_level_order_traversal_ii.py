@@ -1,4 +1,4 @@
-class Solution(object):
+class BinaryTreeLevelOrderTraversalII:
     # import src.online.leetcode.tree_node
     # def levelOrderBottom(self, root):
     #     """

@@ -1,4 +1,4 @@
-class Solution(object):
+class FibonacciNumber:
 
     def __init__(self):
         self.memo = []

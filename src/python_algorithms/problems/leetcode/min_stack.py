@@ -1,4 +1,4 @@
-# class MinStack(object):
+# class MinStack
 #     def __init__(self):
 #         """
 #         initialize your data structure here.
@@ -49,7 +49,7 @@
 #                 return self.stack[-1]
 #             return None
 
-class MinStack(object):
+class MinStack
     def __init__(self):
         """
         initialize your data structure here.

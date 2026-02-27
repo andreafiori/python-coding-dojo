@@ -1,9 +1,9 @@
-class UndirectedGraphNode(object):
+class UndirectedGraphNode
     def __init__(self, x):
         self.label = x
         self.neighbors = []
 
-class Solution(object):
+class Solution:
 
     # def __init__(self):
     #     self.label_map = {}

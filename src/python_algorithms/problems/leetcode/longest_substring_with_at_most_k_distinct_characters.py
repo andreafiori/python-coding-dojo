@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def lengthOfLongestSubstringKDistinct(self, s, k):
         """
         :type s: str

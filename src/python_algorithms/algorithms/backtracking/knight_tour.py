@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-class KnightTour(object):
+class KnightTour:
     def get_valid_pos(self, position: tuple[int, int], n: int) -> list[tuple[int, int]]:
         """
         Find all the valid positions a knight can move to from the current position.

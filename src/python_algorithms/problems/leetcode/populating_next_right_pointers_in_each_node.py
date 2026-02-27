@@ -1,12 +1,12 @@
 # Definition for binary tree with next pointer.
-# class TreeLinkNode(object):
+# class TreeLinkNode
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 #         self.next = None
 
-class Solution(object):
+class Solution:
     def connect(self, root):
         """
         :type root: TreeLinkNode

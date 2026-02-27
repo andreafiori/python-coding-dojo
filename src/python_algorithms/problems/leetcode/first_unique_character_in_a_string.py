@@ -1,4 +1,7 @@
-class Solution(object):
+"""
+"""
+
+class FirstUniqueCharacterInAString:
     def firstUniqChar(self, s):
         """
         :type s: str

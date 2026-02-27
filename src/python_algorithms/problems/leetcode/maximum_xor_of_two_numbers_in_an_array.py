@@ -1,4 +1,4 @@
-class MaxXorOfTwoNumbersInAnArray(object):
+class MaxXorOfTwoNumbersInAnArray
     def findMaximumXOR(self, nums):
         """
         :type nums: List[int]

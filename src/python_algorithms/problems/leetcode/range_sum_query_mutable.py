@@ -1,6 +1,6 @@
 # import math
 #
-# class NumArray(object):
+# class NumArray
 #     def __init__(self, nums):
 #         """
 #         initialize your data structure here.
@@ -42,7 +42,7 @@
 #         return res
 
 
-class NumArray(object):
+class NumArray
     def __init__(self, nums):
         """
         initialize your data structure here.

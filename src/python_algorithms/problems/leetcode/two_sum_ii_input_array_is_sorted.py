@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def twoSum(self, numbers, target):
         """
         :type numbers: List[int]

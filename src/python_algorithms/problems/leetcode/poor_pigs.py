@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def poorPigs(self, buckets, minutesToDie, minutesToTest):
         """
         :type buckets: int

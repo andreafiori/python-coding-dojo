@@ -31,7 +31,7 @@ Note:
 """
 
 
-class ArrayOfDoubledPairs(object):
+class ArrayOfDoubledPairs:
     def can_reorder_doubled(self, arr):
         """
         :type arr: List[int]

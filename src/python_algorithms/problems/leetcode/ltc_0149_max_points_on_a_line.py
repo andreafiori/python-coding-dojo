@@ -19,12 +19,12 @@ Constraints:
 
 from typing import List
 
-class Point(object):
+class Point
     def __init__(self, a=0, b=0):
         self.x = a
         self.y = b
 
-class MaxPointOnALine(object):
+class MaxPointOnALine
     def maxPoints(self, points: List[Point]):
         """
         :type points: List[Point]

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def isInterleave(self, s1, s2, s3):
         """
         :type s1: str

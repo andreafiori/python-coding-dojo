@@ -12,7 +12,7 @@ in that cell and repeat this process.
 
 from __future__ import annotations
 
-class BacktrackingSudoku(object):
+class BacktrackingSudoku:
     """
     The "sudoku" problem is a classic backtracking problem that involves filling a 9x9 grid with digits so that each column, row, and 3x3 subgrid contains all of the digits from 1 to 9.
 

@@ -1,4 +1,4 @@
-class NumMatrix(object):
+class NumMatrix
     # https://leetcode.com/articles/range-sum-query-2d-immutable/#approach-3-caching-rows-accepted
     # def __init__(self, matrix):
     #     """

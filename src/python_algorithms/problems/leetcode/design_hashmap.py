@@ -1,4 +1,4 @@
-class MyHashMap(object):
+class DesignHashMap:
 
     # https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
     def __init__(self):

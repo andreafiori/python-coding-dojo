@@ -1,10 +1,14 @@
-class Solution(object):
-    def isPalindrome(self, s):
+"""
+
+"""
+
+class ValidPalindrome:
+    def isPalindrome(self, s: str):
         """
         :type s: str
         :rtype: bool
         """
-        alnum_s = [t.lower() for t in s if t.isalnum()]
+        alnum_s = [s.lower() for t in s if s.isalnum()]
         ls = len(alnum_s)
         if ls <= 1:
             return True

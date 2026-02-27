@@ -6,7 +6,7 @@ Double Factorial https://en.wikipedia.org/wiki/Double_factorial
 """
 
 
-class Factorial(object):
+class Factorial:
     @staticmethod
     def calculate(n):
         """

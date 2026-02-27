@@ -5,7 +5,7 @@ https://medium.com/@dipcoder/leetcode-716-max-stack-3c154e8ae2c4
 
 """
 
-class MaxStack(object):
+class MaxStack
 
     def __init__(self):
         """

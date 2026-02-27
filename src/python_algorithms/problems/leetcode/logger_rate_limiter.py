@@ -1,4 +1,4 @@
-# class Logger(object):
+# class Logger
 
 #     def __init__(self):
 #         """
@@ -24,7 +24,7 @@
 import heapq
 
 
-class Logger(object):
+class Logger
 
     def __init__(self):
         """

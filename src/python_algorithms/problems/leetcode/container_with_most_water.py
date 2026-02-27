@@ -1,5 +1,9 @@
 
-class ContainerWithMostWater(object):
+"""
+
+"""
+
+class ContainerWithMostWater:
     def maxArea(self, height):
         # skip some choices
         ls = len(height)

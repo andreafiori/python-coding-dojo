@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def reorderLogFiles(self, logs):
     #     """
     #     :type logs: List[str]

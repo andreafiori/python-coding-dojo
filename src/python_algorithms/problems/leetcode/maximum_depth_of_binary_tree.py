@@ -10,7 +10,7 @@ Definition for a binary tree node.
 
 """
 
-class MaximumDepthOfBinaryTree(object):
+class MaximumDepthOfBinaryTree
     def maxDepth(self, root):
         """
         :type root: TreeNode

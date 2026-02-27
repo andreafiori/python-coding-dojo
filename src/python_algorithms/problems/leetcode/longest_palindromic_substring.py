@@ -1,5 +1,9 @@
-class Solution(object):
-    def longestPalindrome(self, s):
+"""
+
+"""
+
+class LongestPalindromicSubstring:
+    def longestPalindrome(self, s: str):
         """
         :type s: str
         :rtype: str
@@ -80,9 +84,3 @@ class Solution(object):
     #     # Find the maximum element in P.
     #     maxLen, centerIndex = max((n, i) for i, n in enumerate(P))
     #     return s[(centerIndex - maxLen)//2: (centerIndex + maxLen)//2]
-
-
-if __name__ == '__main__':
-    # begin
-    s = Solution()
-    print s.longestPalindrome("abcbe")

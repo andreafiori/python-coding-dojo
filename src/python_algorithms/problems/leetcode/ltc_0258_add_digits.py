@@ -13,7 +13,7 @@ Wikipedia: https://en.wikipedia.org/wiki/Digital_root
 
 """
 
-class AddDigits(object):
+class AddDigits:
     def add(self, num: int) -> int:
         """
         Add digits

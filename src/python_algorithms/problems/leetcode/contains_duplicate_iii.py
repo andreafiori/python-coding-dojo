@@ -1,5 +1,5 @@
 from collections import OrderedDict
-class Solution(object):
+class Solution:
     def containsNearbyAlmostDuplicate(self, nums, k, t):
         """
         :type nums: List[int]

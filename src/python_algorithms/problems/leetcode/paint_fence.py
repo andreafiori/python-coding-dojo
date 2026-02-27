@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def numWays(self, n, k):
     #     """
     #     :type n: int

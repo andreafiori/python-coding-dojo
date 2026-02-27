@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def summaryRanges(self, nums):
     #     """
     #     :type nums: List[int]

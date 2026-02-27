@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def longestWord(self, words):
     #     words.sort()
     #     words_set, longest_word = set(['']), ''

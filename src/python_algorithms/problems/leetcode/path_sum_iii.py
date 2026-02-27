@@ -1,5 +1,5 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
@@ -7,7 +7,7 @@
 
 
 # https://leetcode.com/problems/path-sum-iii/discuss/91892/Python-solution-with-detailed-explanation
-class Solution(object):
+class Solution:
     # def find_paths(self, root, target):
     #     if root:
     #         return int(root.val == target)

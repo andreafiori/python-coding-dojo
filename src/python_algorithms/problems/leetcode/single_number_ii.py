@@ -17,7 +17,7 @@ Example 2:
     Output: 99
 
 """
-class SingleNumberII(object):
+class SingleNumberII
     # def singleNumber(self, nums):
     #     """
     #     :type nums: List[int]

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # p.left = parent.right
     # parent.right = p.right
     # p.right = parent

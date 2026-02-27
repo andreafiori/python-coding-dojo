@@ -1,11 +1,11 @@
 # Bnary tree node
-class TreeNode(object):
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
+class Solution:
     def buildTree(self, preorder, inorder):
         n = len(inorder)
         inOrderMap = {inorder[i]: i for i in range(n)}

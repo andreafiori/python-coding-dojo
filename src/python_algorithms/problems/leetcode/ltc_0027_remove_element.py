@@ -13,7 +13,7 @@ Question: https://leetcode.com/problems/remove-element/
 
 from typing import List
 
-class Solution(object):
+class RemoveElement:
     def removeElement(self, nums, val):
         ls = len(nums)
         if ls == 0:

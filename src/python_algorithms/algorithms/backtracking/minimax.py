@@ -10,7 +10,7 @@ height is maximum height of Game tree
 
 from __future__ import annotations
 
-class BackTrackingMinimax(object):
+class BackTrackingMinimax:
     def minimax(
         self, depth: int, node_index: int, is_max: bool, scores: list[int], height: float
     ) -> int:

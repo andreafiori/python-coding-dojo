@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def numberToWords(self, num):
         # https://leetcode.com/problems/integer-to-english-words/discuss/70632/Recursive-Python
         to19 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \

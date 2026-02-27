@@ -1,4 +1,4 @@
-class Solution(object):
+class VerifyingAnAlienDictionary:
     def isAlienSorted(self, words, order):
         """
         :type words: List[str]
@@ -24,9 +24,7 @@ class Solution(object):
             pos += 1
         return True
 
-
-if __name__ == '__main__':
-    s = Solution()
-    print s.isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz")
-    print s.isAlienSorted(["word","world","row"], "worldabcefghijkmnpqstuvxyz")
-    print s.isAlienSorted(["apple","app"], "abcdefghijklmnopqrstuvwxyz")
+# s = Solution()
+# print s.isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz")
+# print s.isAlienSorted(["word","world","row"], "worldabcefghijkmnpqstuvxyz")
+# print s.isAlienSorted(["apple","app"], "abcdefghijklmnopqrstuvwxyz")

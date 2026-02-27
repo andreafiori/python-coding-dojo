@@ -33,7 +33,7 @@ Complexity:
 
 Elements of input arrays can be modified.
 """
-class MissingInteger(object):
+class MissingInteger:
     N_RANGE = (1, 100000)
     ELEMENT_RANGE = (-2147483648, 2147483647)
 

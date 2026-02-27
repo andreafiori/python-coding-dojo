@@ -35,7 +35,7 @@ Base cases: With the data given, we can easily say the ways to reach level 1 = 1
 
 The question reduces to fibonacci sequence with starting digits being 1 and 2.
 """
-class ClimbStairs(object):
+class ClimbStairs:
     def solution_one(self, n: int) -> int:
         """
         :param n: int

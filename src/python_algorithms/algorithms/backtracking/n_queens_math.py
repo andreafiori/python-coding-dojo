@@ -78,7 +78,7 @@ for another one or vice versa.
 
 from __future__ import annotations
 
-class BackTrackingNQueensMath(object):
+class BackTrackingNQueensMath:
     def depth_first_search(
         self,
         possible_board: list[int],

@@ -10,10 +10,9 @@ diagonal lines.
 
 from __future__ import annotations
 
-from src.python_algorithms.algorithms.backtracking.power_sum import solve
 from src.python_algorithms.problems.codility.counting_elements.frog_river_one import solution
 
-class BacktrackingNQueens(object):
+class BacktrackingNQueens:
     solution = []
 
     def is_safe(board: list[list[int]], row: int, column: int) -> bool:

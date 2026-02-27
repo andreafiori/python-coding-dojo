@@ -8,7 +8,7 @@ Question: https://leetcode.com/problems/maximum-subarray/
 
 from typing import List
 
-class Solution(object):
+class Solution:
     def solution_one(self, nums):
         maxEndingHere = maxSofFar = nums[0]
         for i in range(1, len(nums)):

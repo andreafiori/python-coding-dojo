@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def minWindow(self, s, t):
     #     """
     #     :type s: str

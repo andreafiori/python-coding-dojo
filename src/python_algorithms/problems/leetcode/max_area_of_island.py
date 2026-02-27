@@ -4,7 +4,7 @@
 
 from typing import List
 
-class MaxAreaOfIsland(object):
+class MaxAreaOfIsland:
     def solution(self, grid: List[List[int]]):
         """
         :type grid: List[List[int]]

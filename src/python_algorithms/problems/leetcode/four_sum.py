@@ -1,13 +1,7 @@
-# class Solution(object):
-#     def fourSum(self, nums, target):
-#         """
-#         :type nums: List[int]
-#         :type target: int
-#         :rtype: List[List[int]]
-#         """
+"""
+"""
 
-
-class Solution(object):
+class FourSum:
     def fourSum(self, nums, target):
         sort_nums = sorted(nums)
         ls = len(nums)

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def kWeakestRows(self, mat, k):
         """
         :type mat: List[List[int]]

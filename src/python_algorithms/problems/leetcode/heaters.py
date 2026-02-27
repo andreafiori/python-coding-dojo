@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def findRadius(self, houses, heaters):
         """
         :type houses: List[int]

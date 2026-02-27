@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def candy(self, ratings):
         """
         https://discuss.leetcode.com/topic/5243/a-simple-solution

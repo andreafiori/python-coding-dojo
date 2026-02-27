@@ -1,17 +1,17 @@
 # Definition for singly-linked list.
-# class ListNode(object):
+# class ListNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
 
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+class Solution:
     # convert to list
     # def __init__(self):
     #     self.nodelist = []
@@ -43,7 +43,7 @@ class Solution(object):
     # point in recursive function
     def __init__(self):
         self.node = None
-    
+
     def sortedListToBST(self, head):
         # Bottom-up recursion O(n) and O(lgn)
         if head is None:
@@ -51,10 +51,10 @@ class Solution(object):
         size = 0
         pos = self.node = head
         while pos is not None:
-           pos = pos.next
-           size += 1
+            pos = pos.next
+            size += 1
         return self.inorderHelper(0, size - 1)
-    
+
     def inorderHelper(self, start, end):
         if start > end:
             return None
@@ -87,8 +87,4 @@ class Solution(object):
     #     root.left = self.toBST(head, slow)
     #     root.right = self.toBST(slow.next, tail)
     #     return root
-        
-
-
-
 

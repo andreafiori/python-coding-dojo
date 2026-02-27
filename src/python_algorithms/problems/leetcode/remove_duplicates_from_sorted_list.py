@@ -13,7 +13,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-class Solution(object):
+class Solution:
     def solution_one(self, head):
         if head is None:
             return None

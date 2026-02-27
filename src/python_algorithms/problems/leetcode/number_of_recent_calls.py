@@ -1,4 +1,4 @@
-class RecentCounter(object):
+class RecentCounter
 
     def __init__(self):
         self.queue = []

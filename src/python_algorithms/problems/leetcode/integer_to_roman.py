@@ -1,11 +1,11 @@
-# class Solution(object):
+# class Solution:
 #     def intToRoman(self, num):
 #         """
 #         :type num: int
 #         :rtype: str
 #         """
 
-class Solution(object):
+class Solution:
     # def intToRoman(self, num):
     #     #http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
     #     roman_dim = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],

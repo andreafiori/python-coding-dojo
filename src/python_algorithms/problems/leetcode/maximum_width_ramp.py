@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def maxWidthRamp(self, A):
     #     """
     #     :type A: List[int]

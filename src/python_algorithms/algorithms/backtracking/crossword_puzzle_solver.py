@@ -3,7 +3,7 @@ A solution to puzzle problem is to solve the crossword puzzle
 https://www.geeksforgeeks.org/solve-crossword-puzzle/
 """
 
-class CrosswordPuzzleSolver(object):
+class CrosswordPuzzleSolver:
     def is_valid(
         self, puzzle: list[list[str]], word: str, row: int, col: int, vertical: bool
     ) -> bool:

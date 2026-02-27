@@ -4,14 +4,14 @@
 
 from typing import List
 
-class TreeNode(object):
+class TreeNode
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
 
-class MaxBinaryTree(object):
+class MaxBinaryTree
     def constructMaxBinaryTree(self, nums: List[int]):
         """
         :type nums: List[int]

@@ -3,7 +3,7 @@ from src.python_algorithms.data_structures.stack import Stack
 """
 Check if parenthesis are balanced
 """
-class BalancedParentheses(object):
+class BalancedParentheses:
     def __init__(self):
         pass
 

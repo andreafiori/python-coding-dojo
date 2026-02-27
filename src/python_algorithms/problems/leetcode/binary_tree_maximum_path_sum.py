@@ -1,4 +1,4 @@
-class Solution(object):
+class BinaryTreeMaximumPathSum:
     def __init__(self):
         self.result = -2147483647
 

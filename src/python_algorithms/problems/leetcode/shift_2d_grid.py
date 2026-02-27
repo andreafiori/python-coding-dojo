@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def shiftGrid(self, grid, k):
         """
         :type grid: List[List[int]]

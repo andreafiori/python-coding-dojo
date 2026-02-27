@@ -6,7 +6,7 @@ Only the filled cells need to be validated.
 
 import collections
 
-class Solution(object):
+class Solution:
     def isValidSudoku(self, board):
         vset = [0] * 9
         hset = [0] * 9

@@ -1,4 +1,7 @@
-class Solution(object):
+"""
+"""
+
+class FindAllNumbersDisappearedInAnArray:
     def findDisappearedNumbers(self, nums):
         """
         :type nums: List[int]

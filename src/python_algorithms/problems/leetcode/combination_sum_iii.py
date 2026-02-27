@@ -1,7 +1,7 @@
 import itertools as it
 
 
-class Solution(object):
+class Solution:
 
     def combinationSum3(self, k, n):
         """

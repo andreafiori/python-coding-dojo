@@ -8,10 +8,13 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 Question: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 """
+
+from typing import List
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         l = 0
-        r = 1 
+        r = 1
         maxP = 0
 
         while r<len(prices):

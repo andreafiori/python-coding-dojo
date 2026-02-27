@@ -15,7 +15,7 @@ it's execute method when it is pressed.
 """
 
 
-class HideFileCommand(object):
+class HideFileCommand:
     """
     A command to hide a file given its name
     """
@@ -38,7 +38,7 @@ class HideFileCommand(object):
         return f'un-hiding {filename}'
 
 
-class DeleteFileCommand(object):
+class DeleteFileCommand:
     """
     A command to delete a file given its name
     """
@@ -56,7 +56,7 @@ class DeleteFileCommand(object):
         return f'restoring {filename}'
 
 
-class MenuItem(object):
+class MenuItem:
     """
     The invoker class. Here it is items in a menu.
     """

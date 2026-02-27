@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # https://discuss.leetcode.com/topic/17639/20ms-detailed-explained-c-solutions-o-n-space/2
     # def minDistance(self, word1, word2):
     #     """

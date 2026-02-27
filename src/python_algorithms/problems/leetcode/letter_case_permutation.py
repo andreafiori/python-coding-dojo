@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def letterCasePermutation(self, S):
     #     ans = [[]]
 

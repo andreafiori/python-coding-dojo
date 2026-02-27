@@ -5,7 +5,7 @@ Morse_tab = [".-","-...","-.-.",
              "...","-","..-","...-",".--",
              "-..-","-.--","--.."]
 
-class Solution(object):
+class Solution:
     # https://leetcode.com/problems/unique-morse-code-words/solution/
     def uniqueMorseRepresentations(self, words):
         """

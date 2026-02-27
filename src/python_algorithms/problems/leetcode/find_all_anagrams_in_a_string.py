@@ -1,4 +1,4 @@
-class Solution(object):
+class FindAllAnagramsInAString:
     def findAnagrams(self, s, p):
         """
         :type s: str

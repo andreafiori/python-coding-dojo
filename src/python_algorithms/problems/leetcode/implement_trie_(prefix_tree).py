@@ -1,4 +1,4 @@
-class TrieNode(object):
+class TrieNode
     # https://leetcode.com/articles/implement-trie-prefix-tree/#trie-node-structure
     def __init__(self):
         """
@@ -20,7 +20,7 @@ class TrieNode(object):
         self.isEnd = True
 
 
-class Trie(object):
+class Trie
     def __init__(self):
         self.root = TrieNode()
 

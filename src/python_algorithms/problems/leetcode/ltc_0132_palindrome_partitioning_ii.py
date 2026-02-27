@@ -1,10 +1,10 @@
-class Solution(object):
-    # def minCut(self, s):
-    #     """
-    #     :type s: str
-    #     :rtype: int
-    #     """
-    #     # https://discuss.leetcode.com/topic/2840/my-solution-does-not-need-a-table-for-palindrome-is-it-right-it-uses-only-o-n-space
+class PalindromePartitioningII
+    def minCut(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        # https://discuss.leetcode.com/topic/2840/my-solution-does-not-need-a-table-for-palindrome-is-it-right-it-uses-only-o-n-space
         ls = len(s)
         cut = [i -1 for i in range(ls + 1)]
         for i in range(ls):

@@ -9,7 +9,7 @@ Question: https://leetcode.com/problems/plus-one/
 
 from typing import List
 
-class Solution(object):
+class PlusOne:
     def solution_one(self, digits):
         ls = len(digits)
         for index in reversed(range(ls)):

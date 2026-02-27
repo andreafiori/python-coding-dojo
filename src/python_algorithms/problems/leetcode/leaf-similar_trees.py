@@ -1,4 +1,4 @@
-class LeafSimilar(object):
+class LeafSimilar
     def solution(self, root1, root2):
         """
         :type root1: TreeNode

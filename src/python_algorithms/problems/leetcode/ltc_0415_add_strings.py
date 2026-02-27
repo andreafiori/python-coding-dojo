@@ -24,7 +24,7 @@ Constraints:
 
 """
 
-class AddStrings(object):
+class AddStrings:
     # @staticmethod
     # def solution(num1, num2):
     #     """

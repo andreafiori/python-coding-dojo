@@ -13,7 +13,7 @@ Port of the Java example of Dependency Injection" in
 In the following example `time_provider` (service) is embedded into TimeDisplay (client).
 If such service performed an expensive operation you would like to substitute or mock it in tests.
 
-class TimeDisplay(object):
+class TimeDisplay:
 
     def __init__(self):
         self.time_provider = datetime.datetime.now

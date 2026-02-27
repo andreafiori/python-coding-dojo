@@ -1,4 +1,4 @@
-class wildcard_matching(object):
+class wildcard_matching
     # def isMatch(self, s, p):
     #     """
     #     :type s: str

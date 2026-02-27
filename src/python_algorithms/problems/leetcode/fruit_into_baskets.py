@@ -1,4 +1,9 @@
-class Solution(object):
+"""
+"""
+
+import collections
+
+class FruitIntoBaskets:
     # def totalFruit(self, tree):
     #     """
     #     :type tree: List[int]

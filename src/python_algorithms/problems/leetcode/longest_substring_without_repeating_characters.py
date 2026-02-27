@@ -4,7 +4,7 @@ Longest substring without repeating characters | leetcode 03 | https://leetcode.
 Sliding window; remove elements until last occurence of current duplicate
 """
 
-class Solution(object):
+class Solution:
     # def lengthOfLongestSubstring(self, s):
     #     """
     #     :type s: str

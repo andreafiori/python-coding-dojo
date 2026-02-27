@@ -5,7 +5,7 @@ method: dictionary with char counter as key
 
 from collections import defaultdict
 
-class GroupAnagrams(object):
+class GroupAnagrams
     def groupAnagrams(self, strs):
         strs.sort()
         hash = {}

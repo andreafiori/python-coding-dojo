@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def shortestDistance(self, words, word1, word2):
     #     """
     #     :type words: List[str]

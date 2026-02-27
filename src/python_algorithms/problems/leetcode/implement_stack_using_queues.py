@@ -1,4 +1,4 @@
-# class Stack(object):
+# class Stack
 #     def __init__(self):
 #         """
 #         initialize your data structure here.
@@ -42,7 +42,7 @@
 #         return len(self.queue1) + len(self.queue2) == 0
 
 
-class Stack(object):
+class Stack
     def __init__(self):
         """
         initialize your data structure here.

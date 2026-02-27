@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def longestConsecutive(self, root):
         """
         :type root: TreeNode

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def validWordAbbreviation(self, word, abbr):
     #     """
     #     :type word: str

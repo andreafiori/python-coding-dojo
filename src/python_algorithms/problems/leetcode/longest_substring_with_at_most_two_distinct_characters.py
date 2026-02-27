@@ -2,7 +2,7 @@
 
 """
 
-class LongestSubstringTwoDistincttion(object):
+class LongestSubstringTwoDistincttion
     def calculate(self, s: str) -> int:
         """
         :type s: str

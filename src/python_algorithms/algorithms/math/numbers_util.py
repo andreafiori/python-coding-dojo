@@ -1,7 +1,7 @@
 from src.python_algorithms.data_structures.stack import Stack
 
 
-class NumbersUtil(object):
+class NumbersUtil:
     @staticmethod
     def is_palindrome(number):
         temp = number

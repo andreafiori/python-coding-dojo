@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def solve(self, board):
         # https://discuss.leetcode.com/topic/22503/some-tips-for-python-code
         if not board:

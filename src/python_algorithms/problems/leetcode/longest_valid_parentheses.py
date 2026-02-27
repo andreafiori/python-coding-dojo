@@ -1,5 +1,5 @@
 import pdb
-class Solution(object):
+class Solution:
     # def longestValidParentheses(self, s):
     #     """
     #     :type s: str

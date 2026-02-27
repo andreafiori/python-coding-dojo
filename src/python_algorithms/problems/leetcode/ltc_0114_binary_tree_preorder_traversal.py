@@ -1,5 +1,8 @@
-# binary tree preorder traversal | leetcode 94 | https://leetcode.com/problems/binary-tree-preorder-traversal/
-# method: node, left subtree, right subtree recursively
+"""
+Binary tree preorder traversal | leetcode 94 | https://leetcode.com/problems/binary-tree-preorder-traversal/
+method: node, left subtree, right subtree recursively
+
+"""
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -8,17 +11,19 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution:
-    def inorderTraversal(self, root):
+class BinaryTreePreordertraversal:
+    def inorderTraversal(self, root: TreeNode):
         travList = []
-
-        def traverse(root, travList):
-            if root is None:
-                return None
-
-            travList.append(root.val)           # add this node
-            traverse(root.left, travList)       # traverse left subtree and add nodes
-            traverse(root.right, travList)      # traverse right subtree and add nodes
-
-        traverse(root, travList)
+        self.traverse(root, travList)
         return travList
+
+    # Traverse right subtree and add nodes
+    def traverse(self,root, travList):
+        if root is None:
+            return None
+
+        # Add this node
+        travList.append(root.val)
+        # traverse left subtree and add nodes
+        self.traverse(root.left, travList)
+        self.traverse(root.right, travList)

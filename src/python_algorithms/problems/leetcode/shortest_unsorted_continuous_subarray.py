@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # https://leetcode.com/problems/shortest-unsorted-continuous-subarray/solution/
     # def findUnsortedSubarray(self, nums):
     #     """

@@ -1,4 +1,4 @@
-class Solution(object):
+class CountPrimes:
     def countPrimes(self, n):
         """
         :type n: int

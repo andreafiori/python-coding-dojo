@@ -5,7 +5,7 @@ Binary search over sorted array; check if mid is even and mid is the first of th
 
 """
 
-class SingleElementInASortedArray(object):
+class SingleElementInASortedArray
     def singleNonDuplicate(self, nums: list[int]) -> int:
         N = len(nums)
         if N < 2:

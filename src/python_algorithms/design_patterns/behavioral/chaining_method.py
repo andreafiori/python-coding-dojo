@@ -1,4 +1,4 @@
-class Person(object):
+class Person:
     def __init__(self, name, action):
         """
         Constructor
@@ -13,7 +13,7 @@ class Person(object):
         return self.action
 
 
-class Action(object):
+class Action:
     def __init__(self, name):
         self.name = name
         self.amount = 0
@@ -26,4 +26,3 @@ class Action(object):
 
     def stop(self):
         return 'then stop'
-

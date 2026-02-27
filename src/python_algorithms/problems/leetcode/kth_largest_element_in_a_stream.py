@@ -1,4 +1,4 @@
-class KthLargest(object):
+class KthLargest
 
     def __init__(self, k, nums):
         self.nums = nums

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def isStrobogrammatic(self, num):
         """
         :type num: str

@@ -35,7 +35,7 @@ Can you solve it in O(N) time and O(1) space?
 """
 
 
-class Solution(object):
+class BackspaceStringCompare:
     def backspaceCompare(self, S, T):
         """
         :type S: str

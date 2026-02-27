@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     # def sortArrayByParityII(self, A):
     #     N = len(A)
     #     ans = [None] * N

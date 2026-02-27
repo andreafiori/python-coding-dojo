@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def numJewelsInStones(self, J, S):
         """
         :type J: str

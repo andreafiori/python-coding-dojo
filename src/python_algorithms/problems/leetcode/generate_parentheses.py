@@ -1,14 +1,15 @@
-# class Solution(object):
+# class Solution:
 #     def generateParenthesis(self, n):
 #         """
 #         :type n: int
 #         :rtype: List[str]
 #         """
-class Solution(object):
-    def generateParenthesis(self, n):
+
+class GenerateParentheses:
+    def generate(self, n):
         if n == 1:
             return ['()']
-        last_list = self.generateParenthesis(n - 1)
+        last_list = self.generate(n - 1)
         res = []
         for t in last_list:
             curr = t + ')'
@@ -18,7 +19,7 @@ class Solution(object):
         return list(set(res))
 
 
-    # def generateParenthesis(self, n):
+    # def generate(self, n):
     #     def generate(leftnum, rightnum, s, result):
     #         if leftnum == 0 and rightnum == 0:
     #             result.append(s)

@@ -1,4 +1,8 @@
-class Solution(object):
+"""
+
+"""
+
+class WordBreak:
     def wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -19,4 +23,3 @@ class Solution(object):
                         queue.append(start + l)
                         visited[start + l] = 1
         return False
-

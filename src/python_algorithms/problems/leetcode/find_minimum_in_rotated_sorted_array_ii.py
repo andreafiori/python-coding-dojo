@@ -1,4 +1,8 @@
-class Solution(object):
+"""
+
+"""
+
+class FindMinimumInRotatedSortedArrayII:
     # def findMin(self, nums):
     #     """
     #     :type nums: List[int]
@@ -38,7 +42,6 @@ class Solution(object):
     #         else:
     #             end -= 1
     #     return nums[start]
-
 
     def findMin(self, nums):
         l, r = 0, len(nums) - 1

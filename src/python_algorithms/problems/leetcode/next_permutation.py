@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def nextPermutation(self, nums):
         """
         :type nums: List[int]

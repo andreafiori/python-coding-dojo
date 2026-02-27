@@ -1,7 +1,7 @@
 import collections
 
 
-class Solution(object):
+class Solution:
     def repeatedNTimes(self, A):
         """
         :type A: List[int]

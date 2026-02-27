@@ -5,7 +5,7 @@ Defines the skeleton of a base algorithm, deferring definition of exact
 steps to subclasses.
 """
 
-class Template(object):
+class Template:
     @staticmethod
     def get_text():
         return "plain-text"
