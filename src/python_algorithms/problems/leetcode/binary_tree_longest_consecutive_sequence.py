@@ -1,4 +1,8 @@
-class Solution:
+"""
+
+"""
+
+class BinaryTreeLongestConsecutiveSequence:
     def longestConsecutive(self, root):
         """
         :type root: TreeNode

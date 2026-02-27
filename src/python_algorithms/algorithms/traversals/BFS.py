@@ -1,10 +1,12 @@
-#BFS or Breadth First Search is a traversal algorithm for a tree or graph, where we start from the root node(for a tree)
-#And visit all the nodes level by level from left to right. It requires us to keep track of the chiildren of each node we visit
-#In a queue, so that after traversal through a level is complete, our algorithm knows which node to visit next.
-#Time complexity is O(n) but the space complexity can become a problem in some cases.
+"""
+BFS or Breadth First Search is a traversal algorithm for a tree or graph, where we start from the root node(for a tree)
+And visit all the nodes level by level from left to right. It requires us to keep track of the chiildren of each node we visit
+In a queue, so that after traversal through a level is complete, our algorithm knows which node to visit next.
+Time complexity is O(n) but the space complexity can become a problem in some cases.
 
-#To implement BFS, we'll need a Binary Search Tree, which we have already coded. So we'll use that.
+To implement BFS, we'll need a Binary Search Tree, which we have already coded. So we'll use that.
 
+"""
 class Node():
     def __init__(self, data):
         self.data = data
@@ -17,14 +19,15 @@ class BST():
         self.root = None
         self.number_of_nodes = 0
 
-
-#For the insert method, we check if the root node is None, then we make the root node point to the new node
-#Otherwise, we create a temporary pointer which points to the root node at first.
-#Then we compare the data of the new node to the data of the node pointed by the temporary node.
-#If it is greater then first we check if the right child of the temporary node exists, if it does, then we update the temporary node to its right child
-#Otherwise we make the new node the right child of the temporary node
-#And if the new node data is less than the temporary node data, we follow the same procedure as above this time with the left child.
-#The complexity is O(log N) in avg case and O(n) in worst case.
+    """
+    For the insert method, we check if the root node is None, then we make the root node point to the new node
+    Otherwise, we create a temporary pointer which points to the root node at first.
+    Then we compare the data of the new node to the data of the node pointed by the temporary node.
+    If it is greater then first we check if the right child of the temporary node exists, if it does, then we update the temporary node to its right child
+    Otherwise we make the new node the right child of the temporary node
+    And if the new node data is less than the temporary node data, we follow the same procedure as above this time with the left child.
+    The complexity is O(log N) in avg case and O(n) in worst case.
+    """
     def insert(self, data):
         new_node = Node(data)
         if self.root == None:
@@ -47,10 +50,9 @@ class BST():
             self.number_of_nodes += 1
             return
 
-
-#Now we will implement the lookup method.
-#It will follow similar logic as to the insert method to reach the correct position.
-#Only instead of inserting a new node we will return "Found" if the node pointed by the temporary node contains the same value we are looking for
+    #Now we will implement the lookup method.
+    #It will follow similar logic as to the insert method to reach the correct position.
+    #Only instead of inserting a new node we will return "Found" if the node pointed by the temporary node contains the same value we are looking for
     def search(self,data):
         if self.root == None:
             return "Tree Is Empty"
@@ -66,10 +68,9 @@ class BST():
                 elif current_node.data < data:
                     current_node = current_node.right
 
-
-#Finally comes the very complicated remove method.
-#This one is too complicated for me to explain while writing. So I'll just write the code down with some comments
-#explaining which conditions are being checked
+    #Finally comes the very complicated remove method.
+    #This one is too complicated for me to explain while writing. So I'll just write the code down with some comments
+    #explaining which conditions are being checked
     def remove(self, data):
         if self.root == None: #Tree is empty
             return "Tree Is Empty"
@@ -141,7 +142,7 @@ class BST():
         return "Not Found"
 
 
-#Now we implement the BFS method.
+    #Now we implement the BFS method.
     def BFS(self):
         current_node = self.root #We start with the root node
         BFS_result = [] #This will store the result of the BFS
@@ -156,7 +157,7 @@ class BST():
                 queue.append(current_node.right)
         return BFS_result
 
-#Finally, we will implement the Recursive version of the BFS.
+    #Finally, we will implement the Recursive version of the BFS.
     def Recursive_BFS(self, queue, BFS_list):
         if len(queue) == 0:
             return BFS_list
@@ -169,27 +170,27 @@ class BST():
         return self.Recursive_BFS(queue, BFS_list)
 
 
-my_bst = BST()
-my_bst.insert(5)
-my_bst.insert(3)
-my_bst.insert(7)
-my_bst.insert(1)
-my_bst.insert(13)
-my_bst.insert(65)
-my_bst.insert(0)
-my_bst.insert(10)
-'''
-            5
-        3       7
-    1               13
-0                10     65
-'''
+# my_bst = BST()
+# my_bst.insert(5)
+# my_bst.insert(3)
+# my_bst.insert(7)
+# my_bst.insert(1)
+# my_bst.insert(13)
+# my_bst.insert(65)
+# my_bst.insert(0)
+# my_bst.insert(10)
+# '''
+#             5
+#         3       7
+#     1               13
+# 0                10     65
+# '''
 
 #The BFS Traversal for this tree should be : [5,3,7,1,13,0,10,65]
 
-print(my_bst.BFS())
+# print(my_bst.BFS())
 #[5, 3, 7, 1, 13, 0, 10, 65]
 
-print(my_bst.Recursive_BFS([my_bst.root],[])) #We need to pass the root node as an array and an empty array for the result
+# print(my_bst.Recursive_BFS([my_bst.root],[])) #We need to pass the root node as an array and an empty array for the result
 #[5, 3, 7, 1, 13, 0, 10, 65]
 

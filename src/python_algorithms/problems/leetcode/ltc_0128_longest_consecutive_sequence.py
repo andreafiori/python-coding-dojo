@@ -1,7 +1,11 @@
-# longest consecutive sequence | leetcode 128 | https://leetcode.com/problems/longest-consecutive-sequence/
-# set to look-up previous and next numbers; nested while loop is O(2n)
+"""
+Longest consecutive sequence | leetcode 128 | https://leetcode.com/problems/longest-consecutive-sequence/
 
-class Solution:
+set to look-up previous and next numbers; nested while loop is O(2n)
+
+"""
+
+class LongestConsecutiveSequence:
     def longestConsecutive(self, nums: list[int]) -> int:
         if nums == []:
             return 0

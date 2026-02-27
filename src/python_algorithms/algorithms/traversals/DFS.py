@@ -1,7 +1,9 @@
-#DFS or Depth First Search is another traversal algorithm.
-#In this, we traverse to the depths of the tree/graph until we can't go further, in which case, we go back up and repeat the process for the unvisited nodes
-#DFS Traversals can be of 3 types - PreOrder, InOrder, and PostOrder.
-#Again , to implement this, we'll need a BST which we have already coded. So we'll use that.
+"""
+DFS or Depth First Search is another traversal algorithm.
+In this, we traverse to the depths of the tree/graph until we can't go further, in which case, we go back up and repeat the process for the unvisited nodes
+DFS Traversals can be of 3 types - PreOrder, InOrder, and PostOrder.
+Again , to implement this, we'll need a BST which we have already coded. So we'll use that.
+"""
 
 class Node():
     def __init__(self, data):
@@ -15,14 +17,15 @@ class BST():
         self.root = None
         self.number_of_nodes = 0
 
-
-#For the insert method, we check if the root node is None, then we make the root node point to the new node
-#Otherwise, we create a temporary pointer which points to the root node at first.
-#Then we compare the data of the new node to the data of the node pointed by the temporary node.
-#If it is greater then first we check if the right child of the temporary node exists, if it does, then we update the temporary node to its right child
-#Otherwise we make the new node the right child of the temporary node
-#And if the new node data is less than the temporary node data, we follow the same procedure as above this time with the left child.
-#The complexity is O(log N) in avg case and O(n) in worst case.
+    """
+    For the insert method, we check if the root node is None, then we make the root node point to the new node
+    Otherwise, we create a temporary pointer which points to the root node at first.
+    Then we compare the data of the new node to the data of the node pointed by the temporary node.
+    If it is greater then first we check if the right child of the temporary node exists, if it does, then we update the temporary node to its right child
+    Otherwise we make the new node the right child of the temporary node
+    And if the new node data is less than the temporary node data, we follow the same procedure as above this time with the left child.
+    The complexity is O(log N) in avg case and O(n) in worst case.
+    """
     def insert(self, data):
         new_node = Node(data)
         if self.root == None:
@@ -46,9 +49,11 @@ class BST():
             return
 
 
-#Now we will implement the lookup method.
-#It will follow similar logic as to the insert method to reach the correct position.
-#Only instead of inserting a new node we will return "Found" if the node pointed by the temporary node contains the same value we are looking for
+    """
+    Now we will implement the lookup method.
+    It will follow similar logic as to the insert method to reach the correct position.
+    Only instead of inserting a new node we will return "Found" if the node pointed by the temporary node contains the same value we are looking for
+    """
     def search(self,data):
         if self.root == None:
             return "Tree Is Empty"
@@ -65,9 +70,11 @@ class BST():
                     current_node = current_node.right
 
 
-#Finally comes the very complicated remove method.
-#This one is too complicated for me to explain while writing. So I'll just write the code down with some comments
-#explaining which conditions are being checked
+    """
+    Finally comes the very complicated remove method.
+    This one is too complicated for me to explain while writing. So I'll just write the code down with some comments
+    explaining which conditions are being checked
+    """
     def remove(self, data):
         if self.root == None: #Tree is empty
             return "Tree Is Empty"

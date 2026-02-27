@@ -9,7 +9,7 @@ class TreeNode:
         self.right = None
 
 class LowestCommonAncestor:
-    def solution_one(self, root, p, q):
+    def solution_one(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
         """
         :type root: TreeNode
         :type p: TreeNode

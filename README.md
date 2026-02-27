@@ -176,3 +176,5 @@ Every exercise starts with a failing test and evolves through refactoring. If yo
 * [Project Euler github](https://www.freecodecamp.org/learn/project-euler/#project-euler-problems-1-to-100)
 * [Python best practices on Real Python](https://realpython.com/tutorials/best-practices/)
 * [Leetcode problems](https://leetcode.com/problemset/)
+* [Algo Monster](https://algo.monster/)
+* [Algo Expert](https://www.algoexpert.io/)
