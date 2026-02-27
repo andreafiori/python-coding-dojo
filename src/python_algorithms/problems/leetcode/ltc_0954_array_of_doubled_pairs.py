@@ -30,9 +30,10 @@ Note:
 
 """
 
+from typing import List
 
 class ArrayOfDoubledPairs:
-    def can_reorder_doubled(self, arr):
+    def can_reorder_doubled(self, arr: List[int]) -> bool:
         """
         :type arr: List[int]
         :rtype: bool

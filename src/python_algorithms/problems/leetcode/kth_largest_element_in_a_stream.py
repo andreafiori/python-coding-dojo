@@ -1,5 +1,7 @@
-class KthLargest
 
+import heapq
+
+class KthLargest:
     def __init__(self, k, nums):
         self.nums = nums
         self.k = k

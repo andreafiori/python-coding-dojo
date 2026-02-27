@@ -1,4 +1,7 @@
-class IslandPerimeter
+"""
+"""
+
+class IslandPerimeter:
     def is_land_perimeter(self, grid):
         """
         :type grid: List[List[int]]

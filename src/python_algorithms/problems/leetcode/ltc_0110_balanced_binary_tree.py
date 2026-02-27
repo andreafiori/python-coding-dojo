@@ -1,13 +1,4 @@
 """
-Definition for a binary tree node.
-"""
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-"""
 https://leetcode.com/problems/balanced-binary-tree/
 
 Given a binary tree, determine if it is height-balanced.
@@ -38,6 +29,13 @@ Example 2:
     Return false.
 
 """
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 class BalancedBinaryTree:
     def isBalanced(self, root):
         """
@@ -50,7 +48,7 @@ class BalancedBinaryTree:
         if self.getDepth(root) < 0:
             return False
         return True
-    
+
     def getDepth(self, node):
         """
         Get Depth

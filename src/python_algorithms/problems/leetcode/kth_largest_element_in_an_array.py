@@ -1,12 +1,13 @@
 
 import random
+
 class Solution:
     def findKthLargest(self, nums, k):
         # shuffle nums to avoid n*n
         random.shuffle(nums)
-        return self.quickSelection(nums, 0, len(nums) - 1, len(nums) - k)
+        return self._quickSelection(nums, 0, len(nums) - 1, len(nums) - k)
 
-    def quickSelection(self, nums, start, end, k):
+    def _quickSelection(self, nums, start, end, k):
         if start > end:
             return float('inf')
         pivot = nums[end]
@@ -20,6 +21,6 @@ class Solution:
         if left == k:
             return nums[left]
         elif left < k:
-            return self.quickSelection(nums, left + 1, end, k)
+            return self._quickSelection(nums, left + 1, end, k)
         else:
-            return self.quickSelection(nums, start, left - 1, k)
+            return self._quickSelection(nums, start, left - 1, k)

@@ -1,14 +1,17 @@
-# Definition for singly-linked list.
-# class ListNode
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+"""
+# https://leetcode.com/articles/intersection-two-linked-lists/
 
-class Solution:
-    # https://leetcode.com/articles/intersection-two-linked-lists/
-    def getIntersectionNode(self, headA, headB):
+"""
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class IntersectionOfTwoLinkedLists:
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         """
-        :type head1, head1: ListNode
+        :type headA, headB: ListNode
         :rtype: ListNode
         """
         # two points

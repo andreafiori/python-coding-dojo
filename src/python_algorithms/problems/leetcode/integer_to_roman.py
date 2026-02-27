@@ -1,11 +1,8 @@
-# class Solution:
-#     def intToRoman(self, num):
-#         """
-#         :type num: int
-#         :rtype: str
-#         """
+"""
 
-class Solution:
+"""
+
+class IntegerToRoman:
     # def intToRoman(self, num):
     #     #http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
     #     roman_dim = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
@@ -40,6 +37,12 @@ class Solution:
                 num -= values[i]
             i += 1
         return roman
+
+    #     def intToRoman(self, num):
+    #         """
+    #         :type num: int
+    #         :rtype: str
+    #         """
 
 # s = Solution()
 # print s.intToRoman(90)

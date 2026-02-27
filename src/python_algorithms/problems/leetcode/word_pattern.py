@@ -1,5 +1,5 @@
 class WordPattern:
-    def wordPattern(self, pattern, str):
+    def wordPattern(self, pattern: str, str: str) -> bool:
         """
         :type pattern: str
         :type str: str

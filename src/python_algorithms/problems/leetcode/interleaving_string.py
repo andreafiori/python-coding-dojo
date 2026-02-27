@@ -1,5 +1,5 @@
-class Solution:
-    def isInterleave(self, s1, s2, s3):
+class InterleavingString:
+    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
         """
         :type s1: str
         :type s2: str

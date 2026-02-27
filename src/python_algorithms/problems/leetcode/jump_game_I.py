@@ -1,4 +1,4 @@
-class Solution:
+class JumpGame:
     def canJump(self, nums):
         """
         :type nums: List[int]

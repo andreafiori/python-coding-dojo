@@ -1,5 +1,8 @@
+
+from typing import List
+
 class WallsAndGates:
-    def solution(self, rooms):
+    def solution(self, rooms: List[List[int]]):
         """
         :type rooms: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.

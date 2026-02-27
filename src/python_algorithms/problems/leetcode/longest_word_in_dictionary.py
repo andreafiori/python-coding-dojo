@@ -1,4 +1,8 @@
-class Solution:
+import collections
+
+from functools import reduce
+
+class LongestWordInDictionary:
     # def longestWord(self, words):
     #     words.sort()
     #     words_set, longest_word = set(['']), ''

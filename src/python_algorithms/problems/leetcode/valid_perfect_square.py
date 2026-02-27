@@ -1,4 +1,8 @@
-class Solution:
+"""
+
+"""
+
+class ValidPerfectSquare:
     # def isPerfectSquare(self, num):
     #     """
     #     :type num: int

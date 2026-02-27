@@ -1,11 +1,12 @@
-# Definition for an interval.
-# class Interval
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+from typing import List
+
+class Interval:
+    def __init__(self, s=0, e=0):
+        self.start = s
+        self.end = e
 
 class Solution:
-    def insert(self, intervals, newInterval):
+    def insert(self, intervals: List[Interval], newInterval: List[Interval]) -> List[Interval]:
         """
         :type intervals: List[Interval]
         :type newInterval: Interval
@@ -32,8 +33,8 @@ class Solution:
 
     def check_overlap(self, curr_int, new_int):
         if curr_int.start <= new_int.start:
-           if curr_int.end > new_int.start:
-               return True
+            if curr_int.end > new_int.start:
+                return True
         else:
             if curr_int.start <= new_int.end:
                 return True
@@ -44,5 +45,3 @@ class Solution:
         temp_int.start = min([int1.start, int2.start])
         temp_int.end = max([int1.end, int2.end])
         return temp_int
-
-

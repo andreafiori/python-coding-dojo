@@ -1,3 +1,8 @@
+"""
+https://discuss.leetcode.com/topic/63423/1-liner-python/2
+
+"""
+
 class ValidWordSquare:
     def solution(self, words):
         """
@@ -18,6 +23,5 @@ class ValidWordSquare:
         return True
 
     # def validWordSquare(self, words):
-    #     # https://discuss.leetcode.com/topic/63423/1-liner-python/2
     #     # The map(None, ...) transposes the "matrix", filling missing spots with None
     #     return map(None, *words) == map(None, *map(None, *words))

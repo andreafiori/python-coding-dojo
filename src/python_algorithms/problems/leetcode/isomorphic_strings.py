@@ -1,4 +1,8 @@
-class Solution:
+"""
+
+"""
+
+class IsomorphicStrings:
     # def isIsomorphic(self, s, t):
     #     """
     #     :type s: str
@@ -38,4 +42,3 @@ class Solution:
             elif mapTtoS[t_num] != s_num or mapStoT[s_num] != t_num:
                 return False
         return True
-

@@ -1,5 +1,4 @@
 # class Logger
-
 #     def __init__(self):
 #         """
 #         Initialize your data structure here.
@@ -24,7 +23,7 @@
 import heapq
 
 
-class Logger
+class LoggerRateLimiter:
 
     def __init__(self):
         """

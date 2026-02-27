@@ -2,8 +2,10 @@
 """
 
 import string
+from typing import Set
+
 class WordLadder:
-    def ladderLength(self, beginWord, endWord, wordList):
+    def ladderLength(self, beginWord: str, endWord: str, wordList: Set[str]) -> int:
         """
         :type beginWord: str
         :type endWord: str
@@ -39,8 +41,7 @@ class WordLadder:
             return self.bfs(next_level, backward, wordlist, level + 1)
 
 
-if __name__ == "__main__":
-    s = Solution()
+    # s = Solution()
     # print s.ladderLength('hit', 'cog', set(["hot","dot","dog","lot","log"]))
     # print s.ladderLength('a', 'b', set(['a', 'b', 'c']))
     # print s.ladderLength('hot', 'dog', set(['hot', 'dog']))

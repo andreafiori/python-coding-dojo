@@ -2,8 +2,10 @@
 
 """
 
+from typing import Set
+
 class WordBreak:
-    def wordBreak(self, s, wordDict):
+    def wordBreak(self, s: str, wordDict: Set[str]) -> bool:
         """
         :type s: str
         :type wordDict: Set[str]

@@ -1,5 +1,11 @@
-class Solution:
-    def intersect(self, nums1, nums2):
+"""
+
+"""
+
+from typing import List
+
+class IntersectionOfTwoArraysII:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         """
         :type nums1: List[int]
         :type nums2: List[int]

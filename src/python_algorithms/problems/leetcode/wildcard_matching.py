@@ -1,4 +1,4 @@
-class wildcard_matching
+class WildcardMatching:
     # def isMatch(self, s, p):
     #     """
     #     :type s: str
@@ -6,8 +6,7 @@ class wildcard_matching
     #     :rtype: bool
     #     """
     #     return self.dfs(s, p, 0, 0) > 1
-    #
-    #
+
     # def dfs(self, s, p, s_index, p_index):
     #     if s_index == len(s) and p_index == len(p):
     #         return 2

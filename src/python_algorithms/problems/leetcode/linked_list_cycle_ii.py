@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
+class LinkedListCycleII:
     def detectCycle(self, head):
         """
         :type head: ListNode

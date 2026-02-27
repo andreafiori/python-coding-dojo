@@ -1,7 +1,9 @@
-# evaluate boolean binary tree | leetcode 2331 | https://leetcode.com/problems/evaluate-boolean-binary-tree/
-# method: dfs, evaluate left and/or right, return node's value
+"""
+Evaluate boolean binary tree | leetcode 2331 | https://leetcode.com/problems/evaluate-boolean-binary-tree/
+#ethod: dfs, evaluate left and/or right, return node's value
 
-# Definition for a binary tree node.
+"""
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +11,7 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def evaluateTree(self, node):
+    def evaluateTree(self, node: TreeNode):
         if node.left is None and node.right is None:
             return node.val
 

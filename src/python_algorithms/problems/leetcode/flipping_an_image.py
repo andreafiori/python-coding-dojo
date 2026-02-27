@@ -2,7 +2,7 @@
 """
 
 class FlippingAnImage:
-    def flipAndInvertImage(self, A):
+    def flip(self, A):
         for row in A:
             for i in range((len(row) + 1) / 2):
                 """

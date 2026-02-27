@@ -1,5 +1,9 @@
-class Solution:
-    # https://discuss.leetcode.com/topic/12997/11ms-c-solution-concise
+"""
+https://discuss.leetcode.com/topic/12997/11ms-c-solution-concise
+
+"""
+
+class WordBreakII:
     def __init__(self):
         self.solution = {}
 

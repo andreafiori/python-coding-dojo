@@ -34,7 +34,7 @@ class ValidateBinarySearchTree:
         if root is None:
             return True
 
-        if not self.isValidBST(root.left):
+        if not self.isValidBST_two(root.left):
             return False
 
         if self.prev is not None and self.prev.val >= root.val:
@@ -42,4 +42,4 @@ class ValidateBinarySearchTree:
 
         self.prev = root
 
-        return self.isValidBST(root.right)
+        return self.isValidBST_two(root.right)

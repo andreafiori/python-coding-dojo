@@ -1,16 +1,20 @@
-# Definition for singly-linked list.
-# class ListNode
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+"""
+https://discuss.leetcode.com/topic/8570/an-easy-and-clear-way-to-sort-o-1-space
 
-class Solution:
-    def insertionSortList(self, head):
+
+"""
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class InsertionSortList:
+    def insert(self, head: ListNode) -> ListNode:
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        # https://discuss.leetcode.com/topic/8570/an-easy-and-clear-way-to-sort-o-1-space
         if head is None:
             return None
         helper = ListNode(-1000)

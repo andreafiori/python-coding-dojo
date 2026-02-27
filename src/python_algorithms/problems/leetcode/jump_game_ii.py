@@ -2,8 +2,10 @@
 
 """
 
+from typing import List
+
 class JumpGameII:
-    def jump(self, nums):
+    def jump(self, nums: List[int]):
         """
         :type nums: List[int]
         :rtype: int

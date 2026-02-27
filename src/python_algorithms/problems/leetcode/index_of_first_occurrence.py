@@ -1,5 +1,5 @@
 """
-find the index of the first occurrence of a string | leetcode 28
+Find the index of the first occurrence of a string | leetcode 28
 
 sliding window to match each character of the haystack with the needle; no slices.
 

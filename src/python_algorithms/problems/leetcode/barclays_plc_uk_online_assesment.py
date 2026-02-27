@@ -59,52 +59,48 @@ Testcase 3 | Ans: 4
 1340 1345 2
 """
 
+class BarclaysPlcUkOnlineAssessment:
+    # to bucket all requests by resource type
+    def bucketRequestsByResource(self,arr):
+        buckets = dict()
+        for each_req in arr:
+            if buckets.get(each_req[2], False) != False:
+                buckets[each_req[2]].append((each_req[0], each_req[1]))
+            else:
+                buckets[each_req[2]] = [(each_req[0], each_req[1])]
 
-# to bucket all requests by resource type
-def bucketRequestsByResource(arr):
-    buckets = dict()
-    for each_req in arr:
-        if buckets.get(each_req[2], False) != False:
-            buckets[each_req[2]].append((each_req[0], each_req[1]))
-        else:
-            buckets[each_req[2]] = [(each_req[0], each_req[1])]
-    
-    return buckets
+        return buckets
+
+    # to get max number of executed tasks for a single bucket
+    def numExecutedAppsByBucket(self,arr):
+        arr.sort(key = lambda x: x[0])
+        N = len(arr)
+        dont_execute = 0
+        latest_end = arr[0][1]
+
+        for i in range(1, N):
+            if arr[i][0] < latest_end:
+                dont_execute += 1
+                latest_end = min(arr[i][1], latest_end)
+            else:
+                latest_end = arr[i][1]
+
+        return (N - dont_execute)
+
+    # get the maximum number of executed tasks
+    def numExecutedApps(self, arr):
+        buckets = self.bucketRequestsByResource(arr)
+        num_execute = 0
+        for each_bucket in buckets.values():
+            num_execute += self.numExecutedAppsByBucket(each_bucket)
+
+        return num_execute
 
 
-# to get max number of executed tasks for a single bucket
-def numExecutedAppsByBucket(arr):
-    arr.sort(key = lambda x: x[0])
-    N = len(arr)
-    dont_execute = 0
-    latest_end = arr[0][1]
+# arr = []
+# arr_rows, arr_cols = map(int, input().split())
+# for idx in range(arr_rows):
+#     arr.append(list(map(int, input().split())))
 
-    for i in range(1, N):
-        if arr[i][0] < latest_end:
-            dont_execute += 1
-            latest_end = min(arr[i][1], latest_end)
-        else:
-            latest_end = arr[i][1]
-
-    return (N - dont_execute)
-
-
-# get the maximum number of executed tasks
-def numExecutedApps(arr):
-    buckets = bucketRequestsByResource(arr)
-    num_execute = 0
-    for each_bucket in buckets.values():
-        num_execute += numExecutedAppsByBucket(each_bucket)
-
-    return num_execute
-        
-
-# driver code
-arr = []
-arr_rows, arr_cols = map(int, input().split())
-for idx in range(arr_rows):
-    arr.append(list(map(int, input().split())))
-
-result = numExecutedApps(arr)
-print (result)
-
+# result = numExecutedApps(arr)
+# print (result)

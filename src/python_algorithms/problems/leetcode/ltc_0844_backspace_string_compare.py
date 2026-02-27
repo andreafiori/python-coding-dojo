@@ -1,5 +1,5 @@
 """
-Backspace string compare
+Backspace string compare | https://leetcode.com/problems/backspace-string-compare/description/
 
 Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 
@@ -34,9 +34,8 @@ Note:
 Can you solve it in O(N) time and O(1) space?
 """
 
-
 class BackspaceStringCompare:
-    def backspaceCompare(self, S, T):
+    def backspaceCompare(self, S: str, T: str) -> bool:
         """
         :type S: str
         :type T: str

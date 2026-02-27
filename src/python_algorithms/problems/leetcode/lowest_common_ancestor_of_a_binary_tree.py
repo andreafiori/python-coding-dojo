@@ -1,11 +1,14 @@
-# Definition for a binary tree node.
-class TreeNode
+"""
+
+"""
+
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
-class LowestCommonAncestor
+class LowestCommonAncestor:
     def solution_one(self, root, p, q):
         """
         :type root: TreeNode

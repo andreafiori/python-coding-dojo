@@ -1,5 +1,11 @@
-class Solution:
-    def exist(self, board, word):
+"""
+
+"""
+
+from typing import List
+
+class WordSearch:
+    def exist(self, board: List[List[str]], word: str) -> bool:
         """
         :type board: List[List[str]]
         :type word: str
