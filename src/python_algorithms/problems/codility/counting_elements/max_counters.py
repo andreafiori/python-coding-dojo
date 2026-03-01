@@ -1,5 +1,5 @@
 """
-MaxCounters
+MaxCounters | https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 
 Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all
 counters to current maximum
@@ -81,8 +81,8 @@ Elements of input arrays can be modified.
 """
 
 class MaxCounters:
-    MAX_INT = 100000
-    INT_RANGE = (1, MAX_INT)
+    # MAX_INT = 100000
+    # INT_RANGE = (1, MAX_INT)
 
     def solution(self, N, A):
         """
@@ -115,4 +115,3 @@ class MaxCounters:
                 counters[key] = minimum
 
         return counters[1:]  # trim the zero array position off
-

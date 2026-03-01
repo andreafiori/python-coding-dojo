@@ -4,7 +4,6 @@ from src.python_algorithms.problems.leetcode.ltc_0954_array_of_doubled_pairs imp
 
 @pytest.fixture
 def array_doubled_pairs():
-    """Provide a fresh ArrayOfDoubledPairs instance for each test."""
     return ArrayOfDoubledPairs()
 
 class TestArrayOfDoubledPairs:

@@ -75,43 +75,44 @@ Elements of input arrays can be modified.
 """
 import itertools
 
-RANGE_A = (-2147483648, 2147483647)
-RANGE_N = (0, 100000)
 
-def obvious_solution(A):
-    """
-    100% correct but only 33% performant = 75% score
-    :param A: array of integers
-    :return: an integer
-    """
-    def is_triangle(P, Q, R):
-        """true when P, Q, and R form a 'triangle'"""
-        return (P + Q > R) and (Q + R > P) and (R + P > Q)
+class Triangle:
+    # RANGE_A = (-2147483648, 2147483647)
+    # RANGE_N = (0, 100000)
 
-    result = 0
-    # do a factorial visit of every combination
-    for P, Q, R in itertools.combinations(A, 3):
-        if is_triangle(P, Q, R):
-            #print A, P, Q, R
-            result = 1
+    def obvious_solution(self, A):
+        """
+        100% correct but only 33% performant = 75% score
+        :param A: array of integers
+        :return: an integer
+        """
+        def is_triangle(P, Q, R):
+            """true when P, Q, and R form a 'triangle'"""
+            return (P + Q > R) and (Q + R > P) and (R + P > Q)
 
-    return result
+        result = 0
+        # do a factorial visit of every combination
+        for P, Q, R in itertools.combinations(A, 3):
+            if is_triangle(P, Q, R):
+                #print A, P, Q, R
+                result = 1
 
+        return result
 
-def smart_solution(A):
-    """
-    :param A: array of integers
-    :return: 1 if there is a triangle, otherwise 0
-    """
-    def is_triangle(P, Q, R):
-        """true when P, Q, and R form a 'triangle'"""
-        return (P + Q > R) and (Q + R > P) and (R + P > Q)
+    def smart_solution(self, A):
+        """
+        :param A: array of integers
+        :return: 1 if there is a triangle, otherwise 0
+        """
+        def is_triangle(P, Q, R):
+            """true when P, Q, and R form a 'triangle'"""
+            return (P + Q > R) and (Q + R > P) and (R + P > Q)
 
-    A.sort()
+        A.sort()
 
-    # takes advantage of observation that the three closest
-    # math together is the best chance of hitting a triangle
-    for i in range(len(A) - 2):
-        if is_triangle(A[i], A[i+1], A[i+2]):
-            return 1
-    return 0
+        # takes advantage of observation that the three closest
+        # math together is the best chance of hitting a triangle
+        for i in range(len(A) - 2):
+            if is_triangle(A[i], A[i+1], A[i+2]):
+                return 1
+        return 0

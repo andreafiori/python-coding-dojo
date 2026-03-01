@@ -8,7 +8,7 @@ def number_of_disc_intersections():
 
 class TestNumberOfDiscIntersections:
     def test_example(self, number_of_disc_intersections):
-        assert number_of_disc_intersections.solution([1, 5, 2, 1, 4, 0]), 11)
+        assert number_of_disc_intersections.solution([1, 5, 2, 1, 4, 0]) == 11
 
     def test_simple(self, number_of_disc_intersections):
         assert number_of_disc_intersections.solution([1, 1, 1]) == 3
