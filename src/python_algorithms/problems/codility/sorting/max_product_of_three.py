@@ -73,64 +73,21 @@ Elements of input arrays can be modified.
 import unittest
 import random
 
+class MaxProductOfThree:
 
-RANGE_A = (-1000, 1000)
-RANGE_N = (3, 100000)
+    RANGE_A = (-1000, 1000)
+    RANGE_N = (3, 100000)
 
+    def solution(self, A):
+        """
+        :param A: array of integers
+        :return: an integer
+        """
+        # sort them, then just use the last three!
+        A.sort()
+        if A[0] < 0 and A[1] < 0 and A[-1] > 0:
+            # excepting that two negatives make a positive...
+            return max(A[0] * A[1] * A[-1], A[-3] * A[-2] * A[-1])
+        else:
+            return A[-3] * A[-2] * A[-1]
 
-def solution(A):
-    """
-    :param A: array of integers
-    :return: an integer
-    """
-    # sort them, then just use the last three!
-    A.sort()
-    if A[0] < 0 and A[1] < 0 and A[-1] > 0:
-        # excepting that two negatives make a positive...
-        return max(A[0] * A[1] * A[-1], A[-3] * A[-2] * A[-1])
-    else:
-        return A[-3] * A[-2] * A[-1]
-
-
-class TestExercise(unittest.TestCase):
-    def test_example(self):
-        self.assertEqual(solution([-3, 1, 2, -2, 5, 6]), 60)
-
-    def test_sample(self):
-        self.assertEqual(solution([-5, 5, -5, 4]), 125)
-
-    def test_zero(self):
-        self.assertEqual(solution([0, 0, 0, 0]), 0)
-        self.assertEqual(solution([-10, -10, -3, 0, 1]), 100)
-
-    def test_negative(self):
-        self.assertEqual(solution([-4, -3, -2, -1]), -6)
-        self.assertEqual(solution([-1, -1, 1, 2]), 2)
-        self.assertEqual(solution([-5, -5, 1, 2]), 50)
-        self.assertEqual(solution([-5, -5, -1, 0]), 0)
-
-    def test_large(self):
-        self.assertEqual(solution([1000, 1000, 1000]), int(1e9))
-
-    def test_extreme(self):
-        A = [random.randint(*RANGE_A) for _ in range(3, 99997)]
-        A += [1000, 1000, 1000]
-        self.assertEqual(solution(A), int(1e9))
-
-
-if __name__ == '__main__':
-    unittest.main()
-
-
-"""
-example
-one_triple
-simple1
-simple2
-small_random:
-medium_range: -1000, -999,...,1000, length 1000 = 999000000
-medium_random: length ~10000
-large_random: random large, length 100000
-large_range: 2000 * (-10..10) + [-1000, 500, -1] = 5000000
-extreme_large: (-2, .., -2, 1, .., 1) and (MAX_INT)...(MAX_INT), length ~100000
-"""

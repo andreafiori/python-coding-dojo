@@ -1,6 +1,6 @@
 import pytest
 
-from python_algorithms.problems.leetcode.ltc_0954_array_of_doubled_pairs import ArrayOfDoubledPairs
+from src.python_algorithms.problems.leetcode.ltc_0954_array_of_doubled_pairs import ArrayOfDoubledPairs
 
 @pytest.fixture
 def array_doubled_pairs():

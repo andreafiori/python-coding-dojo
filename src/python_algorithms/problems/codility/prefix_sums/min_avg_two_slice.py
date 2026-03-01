@@ -1,12 +1,7 @@
 """
-MinAvgTwoSlice
+MinAvgTwoSlice | https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 
 Find the minimal average of any slice containing at least two elements.
-
-https://codility.com/programmers/task/min_avg_two_slice/
-
-
-----------------------------------------------------------------------------------------------------
 
 # Analysis
 
@@ -127,7 +122,7 @@ Elements of input arrays can be modified.
 """
 
 class MinAvgTwoSlice:
-    RANGE_A = (2, 100000)
+    # RANGE_A = (2, 100000)
     RANGE_N = (-10000, 10000)
 
     def solution(self, A):

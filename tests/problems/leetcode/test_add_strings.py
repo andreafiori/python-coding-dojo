@@ -1,5 +1,5 @@
 
-from python_algorithms.problems.leetcode.ltc_0415_add_strings import AddStrings
+from src.python_algorithms.problems.leetcode.ltc_0415_add_strings import AddStrings
 
 class TestAddStrings:
     def test_solution(self):

@@ -1,16 +1,17 @@
 """
-Tape Equilibrium
-
-URL: http://codility.com/demo/take-sample-test/tape_equilibrium
+Tape Equilibrium | http://codility.com/demo/take-sample-test/tape_equilibrium
 
 The variable of head stores the sum of the heading part of the tape. And the variable of tail stores the sum of tailing part.
- Then, we move the index from 2nd position to the last 2nd position.
- Every time we move the index, we adjust both head and tail, compute and compare the difference.
+
+Then, we move the index from 2nd position to the last 2nd position.
+
+Every time we move the index, we adjust both head and tail, compute and compare the difference.
+
 """
 class TapeEquilibrium:
 
-    N_RANGE = (2, 100000)
-    ELEMENT_RANGE = (-1000, 1000)
+    # N_RANGE = (2, 100000)
+    # ELEMENT_RANGE = (-1000, 1000)
 
     @staticmethod
     def solution(A):

@@ -63,9 +63,8 @@ Elements of input arrays can be modified.
 """
 
 class FrogRiverOne:
-    N_RANGE = (1, 100000)
-
-    def solution(X, A):
+    # N_RANGE = (1, 100000)
+    def solution(self, X, A):
         """
         :param X: an integer. the frogs destination
         :param A: non-empty list of integers
@@ -78,7 +77,6 @@ class FrogRiverOne:
             if len(leaves) == X:
                 return second
         return -1
-
 
 # extreme_frog - frog never crosses
 # small_random1 - 3 random permutation X=50

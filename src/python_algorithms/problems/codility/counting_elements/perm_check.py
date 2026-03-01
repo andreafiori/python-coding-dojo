@@ -56,10 +56,10 @@ Complexity:
 Elements of input arrays can be modified.
 """
 class PermCheck:
-    ARR_RANGE = (1, 100000)
-    INT_RANGE = (1, 1000000000)
+    # ARR_RANGE = (1, 100000)
+    # INT_RANGE = (1, 1000000000)
 
-    def solution(A):
+    def solution(self, A):
         """
         :param A: a list of integers
         :return: true if the list is a permutation (sequence from 1 to N)

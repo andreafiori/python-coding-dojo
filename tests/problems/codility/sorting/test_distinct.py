@@ -13,26 +13,25 @@ class TestDistinct:
         assert distinct_instance.solution(x) == 3
 
     # def test_simple(self):
-    #     self.assertEqual(solution([0, 1, 2, 3, 4]), 5)
+    #     assert (solution([0, 1, 2, 3, 4]), 5
 
     # def test_edges(self):
-    #     self.assertEqual(solution([]), 0)
-    #     self.assertEqual(solution([0]), 1)
-    #     self.assertEqual(solution([1]), 1)
-    #     self.assertEqual(solution([0, 1]), 2)
-    #     self.assertEqual(solution([-1, 1]), 2)
-    #     self.assertEqual(solution([RANGE_A[0], RANGE_A[1]]), 2)
+    #     assert solution([]) == 0
+    #     assert solution([0]) == 1
+    #     assert solution([1]) == 1
+    #     assert solution([0, 1]) == 2
+    #     assert solution([-1, 1]) == 2
+    #     assert solution([RANGE_A[0], RANGE_A[1]]) == 2
 
     # def test_medium(self):
-    #     self.assertEqual(solution([1] * 500), 1)
-    #     self.assertEqual(solution([x for x in range(-250, 250)]), 500)
-    #     self.assertEqual(solution([x for x in range(-500, 500, 2)]), 500)
-    #     self.assertEqual(solution([x for x in range(-500, 500, 2)] * 2), 500)
+    #     assert solution([1] * 500) == 1
+    #     assert solution([x for x in range(-250, 250)]) == 500
+    #     assert solution([x for x in range(-500, 500, 2)]) == 500
+    #     assert solution([x for x in range(-500, 500, 2)] * 2) == 500
 
     # def test_random(self):
     #     A = [random.randint(*RANGE_A) for _ in range(*RANGE_N)]
-    #     """ print solution(A), A """
 
     # def test_extreme(self):
     #     A = [x for x in range(*RANGE_N)]
-    #     self.assertEqual(solution(A), RANGE_N[1])
+    #     assert (solution(A), RANGE_N[1])

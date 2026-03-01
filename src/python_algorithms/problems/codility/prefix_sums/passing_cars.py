@@ -1,8 +1,6 @@
 """
-Passing Cars
+Passing Cars | https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 Count the number of passing cars on the road.
-
-
 
 ***
 Note:
@@ -64,10 +62,8 @@ Complexity:
 Elements of input arrays can be modified.
 """
 
-
-
 class PassingCars:
-    MAX_INT = int(100000)
+    # MAX_INT = int(100000)
     MAX_PAIRS = int(1e9)
 
     def solution(self, A):
