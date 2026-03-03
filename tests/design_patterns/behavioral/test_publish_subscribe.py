@@ -1,7 +1,7 @@
 import unittest
 
 from unittest.mock import patch, call
-from src.python_algorithms.design_patterns.behavioral.publish_subscribe import Provider, Publisher, Subscriber
+from python_algorithms.design_patterns.behavioral.publish_subscribe import Provider, Publisher, Subscriber
 
 class TestProvider(unittest.TestCase):
     """

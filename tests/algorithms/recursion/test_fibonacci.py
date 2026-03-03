@@ -1,6 +1,6 @@
 import unittest
 
-from src.python_algorithms.algorithms.recursion.fibonacci import Fibonacci
+from python_algorithms.algorithms.recursion.fibonacci import Fibonacci
 
 class FibonacciTest(unittest.TestCase):
     def setUp(self):

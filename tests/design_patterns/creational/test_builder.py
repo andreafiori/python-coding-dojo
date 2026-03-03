@@ -1,5 +1,5 @@
 import unittest
-from src.python_algorithms.design_patterns.creational.builder import construct_building, House, Flat, ComplexHouse
+from python_algorithms.design_patterns.creational.builder import construct_building, House, Flat, ComplexHouse
 
 
 class TestSimple(unittest.TestCase):

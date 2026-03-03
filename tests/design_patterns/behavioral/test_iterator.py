@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.design_patterns.behavioral.iterator import count_to
+from python_algorithms.design_patterns.behavioral.iterator import count_to
 
 @pytest.fixture
 def generator_list():

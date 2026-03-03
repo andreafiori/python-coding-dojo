@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.codility.time_complexity.tape_equilibrium import TapeEquilibrium
+from python_algorithms.problems.codility.time_complexity.tape_equilibrium import TapeEquilibrium
 
 @pytest.fixture
 def tape_equilibrium():

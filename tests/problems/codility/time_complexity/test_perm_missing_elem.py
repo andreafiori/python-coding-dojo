@@ -2,7 +2,7 @@
 import pytest
 import random
 
-from src.python_algorithms.problems.codility.time_complexity.perm_missing_elem import PerMissElem
+from python_algorithms.problems.codility.time_complexity.perm_missing_elem import PerMissElem
 
 @pytest.fixture
 def perm_missing_elem():

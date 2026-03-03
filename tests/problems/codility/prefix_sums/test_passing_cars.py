@@ -1,7 +1,7 @@
 import pytest
 import random
 
-from src.python_algorithms.problems.codility.prefix_sums.passing_cars import PassingCars
+from python_algorithms.problems.codility.prefix_sums.passing_cars import PassingCars
 
 @pytest.fixture
 def passing_cars():

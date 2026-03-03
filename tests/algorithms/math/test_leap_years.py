@@ -1,6 +1,6 @@
 import unittest
 
-from src.python_algorithms.algorithms.math.leap_years import is_leap
+from python_algorithms.algorithms.math.leap_years import is_leap
 
 class LeapYearsTest(unittest.TestCase):
     def test_is_leap(self):

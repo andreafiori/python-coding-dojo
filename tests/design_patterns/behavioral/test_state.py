@@ -1,7 +1,7 @@
 import unittest
 import pytest
 
-from src.python_algorithms.design_patterns.behavioral.state import Radio
+from python_algorithms.design_patterns.behavioral.state import Radio
 
 
 class StateTest(unittest.TestCase):

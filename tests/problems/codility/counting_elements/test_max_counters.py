@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from src.python_algorithms.problems.codility.counting_elements.max_counters import MaxCounters
+from python_algorithms.problems.codility.counting_elements.max_counters import MaxCounters
 
 """
 example

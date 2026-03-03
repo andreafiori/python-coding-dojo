@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.algorithms.backtracking.combination_sum import CombinationSum
+from python_algorithms.algorithms.backtracking.combination_sum import CombinationSum
 
 class TestCombinationSum:
     """

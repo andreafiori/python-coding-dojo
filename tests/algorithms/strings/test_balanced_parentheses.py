@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.algorithms.strings.balanced_parentheses import BalancedParentheses
+from python_algorithms.algorithms.strings.balanced_parentheses import BalancedParentheses
 
 @pytest.fixture
 def balanced_parentheses():

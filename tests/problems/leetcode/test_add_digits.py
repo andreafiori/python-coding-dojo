@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.leetcode.ltc_0258_add_digits import AddDigits
+from python_algorithms.problems.leetcode.ltc_0258_add_digits import AddDigits
 
 @pytest.fixture
 def add_digits():

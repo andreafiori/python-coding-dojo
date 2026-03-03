@@ -1,7 +1,7 @@
 import pytest
 
 from unittest.mock import patch, Mock
-from src.python_algorithms.design_patterns.behavioral.observer import Data, DecimalViewer, HexViewer
+from python_algorithms.design_patterns.behavioral.observer import Data, DecimalViewer, HexViewer
 
 
 @pytest.fixture

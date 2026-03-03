@@ -6,7 +6,7 @@ Input: n = 2
 Output: ["(())","()()"]
 Leetcode link: https://leetcode.com/problems/generate-parentheses/description/
 """
-from src.python_algorithms.algorithms.backtracking.word_ladder import backtrack
+from python_algorithms.algorithms.backtracking.word_ladder import backtrack
 
 class GenerateParentheses:
     def backtrack(

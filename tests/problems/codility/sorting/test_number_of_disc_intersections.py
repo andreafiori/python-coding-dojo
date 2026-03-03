@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.codility.sorting.number_of_disc_intersections import NumberOfDiscIntersections
+from python_algorithms.problems.codility.sorting.number_of_disc_intersections import NumberOfDiscIntersections
 
 @pytest.fixture
 def number_of_disc_intersections():

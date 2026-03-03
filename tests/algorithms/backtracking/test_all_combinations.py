@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.algorithms.backtracking.all_combinations import BacktrackingAllCombinations
+from python_algorithms.algorithms.backtracking.all_combinations import BacktrackingAllCombinations
 
 @pytest.fixture
 def backtracker():

@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.leetcode.ltc_0067_add_binary import AddBinary
+from python_algorithms.problems.leetcode.ltc_0067_add_binary import AddBinary
 
 @pytest.fixture
 def add_binary():

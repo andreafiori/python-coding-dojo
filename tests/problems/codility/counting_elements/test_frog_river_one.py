@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.codility.counting_elements.frog_river_one import FrogRiverOne
+from python_algorithms.problems.codility.counting_elements.frog_river_one import FrogRiverOne
 
 @pytest.fixture
 def frog_river_one():

@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.codility.arrays.cyclic_rotation import CyclicRotation
+from python_algorithms.problems.codility.arrays.cyclic_rotation import CyclicRotation
 
 @pytest.fixture
 def cyclic_rotation():

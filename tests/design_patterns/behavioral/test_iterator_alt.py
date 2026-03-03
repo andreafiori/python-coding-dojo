@@ -1,6 +1,6 @@
 import unittest
 
-from src.python_algorithms.design_patterns.behavioral.iterator_alt import NumberWords
+from python_algorithms.design_patterns.behavioral.iterator_alt import NumberWords
 
 
 class IteratorAltTest(unittest.TestCase):

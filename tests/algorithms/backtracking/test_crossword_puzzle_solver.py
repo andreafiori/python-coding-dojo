@@ -1,7 +1,7 @@
 import pytest
 import copy
 
-from src.python_algorithms.algorithms.backtracking.crossword_puzzle_solver import CrosswordPuzzleSolver
+from python_algorithms.algorithms.backtracking.crossword_puzzle_solver import CrosswordPuzzleSolver
 
 class TestCrosswordPuzzleSolver:
     @pytest.fixture

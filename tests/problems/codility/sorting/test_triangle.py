@@ -1,7 +1,7 @@
 
 import pytest
 
-from src.python_algorithms.problems.codility.sorting.triangle import Triangle
+from python_algorithms.problems.codility.sorting.triangle import Triangle
 
 @pytest.fixture
 def triangle_instance():

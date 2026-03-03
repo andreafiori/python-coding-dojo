@@ -1,7 +1,7 @@
 
 import pytest
 
-from src.python_algorithms.problems.codility.counting_elements.missing_integer import MissingInteger
+from python_algorithms.problems.codility.counting_elements.missing_integer import MissingInteger
 
 @pytest.fixture
 def missing_integer():

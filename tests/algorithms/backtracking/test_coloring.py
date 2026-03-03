@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.algorithms.backtracking.coloring import Coloring
+from python_algorithms.algorithms.backtracking.coloring import Coloring
 
 class TestColoring:
     @pytest.fixture

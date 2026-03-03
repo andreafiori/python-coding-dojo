@@ -1,6 +1,6 @@
 import pytest, random
 
-from src.python_algorithms.problems.codility.counting_elements.perm_check import PermCheck
+from python_algorithms.problems.codility.counting_elements.perm_check import PermCheck
 
 @pytest.fixture
 def perm_check():

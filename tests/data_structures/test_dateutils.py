@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.data_structures.date_utils import DateUtils
+from python_algorithms.data_structures.date_utils import DateUtils
 
 @pytest.fixture
 def date_utils():

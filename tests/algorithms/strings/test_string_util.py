@@ -1,4 +1,4 @@
-from src.python_algorithms.algorithms.strings.string_util import StringUtil
+from python_algorithms.algorithms.strings.string_util import StringUtil
 
 class TestStringUtil:
     def test_is_palindrom_is_true(self):

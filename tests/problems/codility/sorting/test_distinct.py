@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.codility.sorting.distinct import Distinct
+from python_algorithms.problems.codility.sorting.distinct import Distinct
 
 @pytest.fixture
 def distinct_instance():

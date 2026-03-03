@@ -1,6 +1,6 @@
 import unittest
 
-from src.python_algorithms.algorithms.math.armstrong_number import ArmstrongNumber
+from python_algorithms.algorithms.math.armstrong_number import ArmstrongNumber
 
 class TestArmstrongNumber(unittest.TestCase):
     def setUp(self):

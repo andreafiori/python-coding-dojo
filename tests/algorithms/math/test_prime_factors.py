@@ -1,5 +1,5 @@
 import unittest
-from src.python_algorithms.algorithms.math.prime_factors import PrimeFactors
+from python_algorithms.algorithms.math.prime_factors import PrimeFactors
 
 
 class PrimeFactorsTest(unittest.TestCase):

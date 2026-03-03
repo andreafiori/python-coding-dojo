@@ -1,4 +1,4 @@
-from src.python_algorithms.design_patterns.behavioral.catalog import Catalog, CatalogInstance, CatalogClass, CatalogStatic
+from python_algorithms.design_patterns.behavioral.catalog import Catalog, CatalogInstance, CatalogClass, CatalogStatic
 
 class TestCatalog:
     def test_catalog_main_method(self):

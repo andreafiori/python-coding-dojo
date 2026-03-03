@@ -1,6 +1,6 @@
 import pytest
 
-from src.python_algorithms.problems.codility.time_complexity.frog_jmp import FrogJmp
+from python_algorithms.problems.codility.time_complexity.frog_jmp import FrogJmp
 
 @pytest.fixture
 def frog_jmp():

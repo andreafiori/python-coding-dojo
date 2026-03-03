@@ -1,5 +1,5 @@
 import pytest
-from src.python_algorithms.design_patterns.behavioral.command import MenuItem, DeleteFileCommand, HideFileCommand
+from python_algorithms.design_patterns.behavioral.command import MenuItem, DeleteFileCommand, HideFileCommand
 
 @pytest.fixture
 def item1():

@@ -1,5 +1,5 @@
 import unittest
-from src.python_algorithms.design_patterns.behavioral.chain_of_responsibility import ConcreteHandler0, ConcreteHandler1, ConcreteHandler2, FallbackHandler
+from python_algorithms.design_patterns.behavioral.chain_of_responsibility import ConcreteHandler0, ConcreteHandler1, ConcreteHandler2, FallbackHandler
 
 class ChainOfResponsabilityTest(unittest.TestCase):
     def setUp(self) -> None:

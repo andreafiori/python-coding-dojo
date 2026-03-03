@@ -10,7 +10,7 @@ diagonal lines.
 
 from __future__ import annotations
 
-from src.python_algorithms.problems.codility.counting_elements.frog_river_one import solution
+from python_algorithms.problems.codility.counting_elements.frog_river_one import solution
 
 class BacktrackingNQueens:
     solution = []
