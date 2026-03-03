@@ -1,4 +1,5 @@
 import unittest
+
 from src.python_algorithms.problems.codility.iterations.binary_gap import BinaryGap
 
 class TestBinaryGap(unittest.TestCase):

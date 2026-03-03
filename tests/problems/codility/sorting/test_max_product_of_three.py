@@ -1,4 +1,5 @@
 import pytest
+import random
 
 from python_algorithms.problems.codility.sorting.max_product_of_three import MaxProductOfThree
 
@@ -7,6 +8,9 @@ def max_product_of_three():
     return MaxProductOfThree()
 
 class TestMaxProductOfThree:
+    RANGE_A = (-1000, 1000)
+    # RANGE_N = (3, 100000)
+
     def test_example(self, max_product_of_three):
         assert max_product_of_three.solution([-3, 1, 2, -2, 5, 6]) == 60
 
@@ -27,6 +31,6 @@ class TestMaxProductOfThree:
         assert max_product_of_three.solution([1000, 1000, 1000]) == int(1e9)
 
     def test_extreme(self, max_product_of_three):
-        A = [max_product_of_three.random.randint(*max_product_of_three.RANGE_A) for _ in range(3, 99997)]
+        A = [random.randint(*self.RANGE_A) for _ in range(3, 99997)]
         A += [1000, 1000, 1000]
         assert max_product_of_three.solution(A) == int(1e9)

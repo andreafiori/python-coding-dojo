@@ -1,9 +1,13 @@
 """
+294. Flip Game | https://leetcode.com/problems/flip-game/description/
+
 
 """
 
+from ast import List
+
 class FlipGame:
-    def generatePossibleNextMoves(self, s):
+    def generatePossibleNextMoves(self, s: str) -> List[str]:
         """
         :type s: str
         :rtype: List[str]

@@ -60,6 +60,16 @@ Complexity:
 
 
 Elements of input arrays can be modified.
+
+# extreme_frog - frog never crosses
+# small_random1 - 3 random permutation X=50
+# small_random2 - 5 random permutation X=60
+# extreme_leaves = all leaves in the same place
+# medium_random = 6 and 2 random permutations, X = ~5000
+# medium_range = arithmetic sequences X = 5000
+# large_random = 10 and 100 random permutation, X = ~10000
+# large_permutation = permutation tests (2)
+# large_range = arithmetic sequences X=30000
 """
 
 class FrogRiverOne:
@@ -77,13 +87,3 @@ class FrogRiverOne:
             if len(leaves) == X:
                 return second
         return -1
-
-# extreme_frog - frog never crosses
-# small_random1 - 3 random permutation X=50
-# small_random2 - 5 random permutation X=60
-# extreme_leaves = all leaves in the same place
-# medium_random = 6 and 2 random permutations, X = ~5000
-# medium_range = arithmetic sequences X = 5000
-# large_random = 10 and 100 random permutation, X = ~10000
-# large_permutation = permutation tests (2)
-# large_range = arithmetic sequences X=30000

@@ -40,8 +40,8 @@ A zero indexed array A consisting of N integers is given. A triplet (P, Q, R) is
         A[R] + A[P] > A[Q].
 
 For example, consider array A such that:
-  A[0] = 10    A[1] = 2    A[2] = 5
-  A[3] = 1     A[4] = 8    A[5] = 20
+    A[0] = 10    A[1] = 2    A[2] = 5
+    A[3] = 1     A[4] = 8    A[5] = 20
 
 Triplet (0, 2, 4) is triangular.
 
@@ -52,67 +52,58 @@ Write a function:
 that, given a zero-indexed array A consisting of N integers, returns 1 if there exists a triangular triplet for this array and returns 0 otherwise.
 
 For example, given array A such that:
-  A[0] = 10    A[1] = 2    A[2] = 5
-  A[3] = 1     A[4] = 8    A[5] = 20
+    A[0] = 10    A[1] = 2    A[2] = 5
+    A[3] = 1     A[4] = 8    A[5] = 20
 
 the function should return 1, as explained above. Given array A such that:
-  A[0] = 10    A[1] = 50    A[2] = 5
-  A[3] = 1
+    A[0] = 10    A[1] = 50    A[2] = 5
+    A[3] = 1
 
 the function should return 0.
 
 Assume that:
-
-        N is an integer within the range [0..100,000];
-        each element of array A is an integer within the range [-2,147,483,648..2,147,483,647].
+    N is an integer within the range [0..100,000];
+    each element of array A is an integer within the range [-2,147,483,648..2,147,483,647].
 
 Complexity:
-
-        expected worst-case time complexity is O(N*log(N));
-        expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
+    expected worst-case time complexity is O(N*log(N));
+    expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 Elements of input arrays can be modified.
 """
+
 import itertools
 
-
 class Triangle:
-    # RANGE_A = (-2147483648, 2147483647)
-    # RANGE_N = (0, 100000)
-
-    def obvious_solution(self, A):
+    def solution(self, A):
         """
         100% correct but only 33% performant = 75% score
         :param A: array of integers
         :return: an integer
         """
-        def is_triangle(P, Q, R):
-            """true when P, Q, and R form a 'triangle'"""
-            return (P + Q > R) and (Q + R > P) and (R + P > Q)
-
         result = 0
         # do a factorial visit of every combination
         for P, Q, R in itertools.combinations(A, 3):
-            if is_triangle(P, Q, R):
+            if self._is_triangle(P, Q, R):
                 #print A, P, Q, R
                 result = 1
 
         return result
+
+    def _is_triangle(self, P, Q, R):
+            """true when P, Q, and R form a 'triangle'"""
+            return (P + Q > R) and (Q + R > P) and (R + P > Q)
 
     def smart_solution(self, A):
         """
         :param A: array of integers
         :return: 1 if there is a triangle, otherwise 0
         """
-        def is_triangle(P, Q, R):
-            """true when P, Q, and R form a 'triangle'"""
-            return (P + Q > R) and (Q + R > P) and (R + P > Q)
-
         A.sort()
 
         # takes advantage of observation that the three closest
         # math together is the best chance of hitting a triangle
         for i in range(len(A) - 2):
-            if is_triangle(A[i], A[i+1], A[i+2]):
+            if self._is_triangle(A[i], A[i+1], A[i+2]):
                 return 1
         return 0

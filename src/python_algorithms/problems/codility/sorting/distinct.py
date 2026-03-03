@@ -39,9 +39,6 @@ Elements of input arrays can be modified.
 """
 
 class Distinct:
-    RANGE_A = (-1000000, 1000000)
-    RANGE_N = (0, 100000)
-
     def solution(self, A):
         """
         :param A: array of integers

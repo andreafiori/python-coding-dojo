@@ -1,8 +1,6 @@
-import random
-
-
 """
-# Missing Integer
+Missing Integer | https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
+
 Find the minimal positive integer not occurring in the given sequence.
 
 Write a function:
@@ -28,16 +26,13 @@ Assume that:
 
 Complexity:
     * expected worst-case time complexity is O(N)
-    * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input
-        arguments).
+    * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 Elements of input arrays can be modified.
 """
-class MissingInteger:
-    N_RANGE = (1, 100000)
-    ELEMENT_RANGE = (-2147483648, 2147483647)
 
-    def solution(self, A):
+class MissingInteger:
+    def solution(self, A) -> int:
         """
         :param A: non-empty list of integers
         :return: an integer - the smallest positive integer that is missing
@@ -50,10 +45,9 @@ class MissingInteger:
                 break
         return missing
 
-    def alternate_solution(self, A):
+    def alternate_solution(self, A) -> int:
         """
         A 'Pidgeon Hole' solution:
-
         :param A: non-empty list of integers
         :return: an integer - the smallest positive integer that is missing
         """
@@ -79,4 +73,3 @@ class MissingInteger:
                 break
 
         return counter
-

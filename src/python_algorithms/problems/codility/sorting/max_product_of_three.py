@@ -19,9 +19,8 @@ The product of the top 3 is 125000, but the product of the bottom two (-100, 100
  with the top one (50) is 500000!
 
 
--------------------
+--------------------------------------------------------------------------------------------------------------------
 # Problem Description
-
 
 A non-empty zero-indexed array A consisting of N integers is given. The product of triplet (P, Q, R) equates to A[P] * A[Q] * A[R] (0 <= P < Q < R < N).
 
@@ -70,14 +69,7 @@ Complexity:
 Elements of input arrays can be modified.
 """
 
-import unittest
-import random
-
 class MaxProductOfThree:
-
-    RANGE_A = (-1000, 1000)
-    RANGE_N = (3, 100000)
-
     def solution(self, A):
         """
         :param A: array of integers
@@ -90,4 +82,3 @@ class MaxProductOfThree:
             return max(A[0] * A[1] * A[-1], A[-3] * A[-2] * A[-1])
         else:
             return A[-3] * A[-2] * A[-1]
-

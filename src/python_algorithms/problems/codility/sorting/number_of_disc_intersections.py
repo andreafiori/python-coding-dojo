@@ -63,6 +63,7 @@ Complexity:
 
 Elements of input arrays can be modified.
 """
+import itertools
 
 class NumberOfDiscIntersections:
     # RANGE_A = (0, 2147483647)
@@ -74,24 +75,19 @@ class NumberOfDiscIntersections:
         Brute force - visit and test every combination - O(N**2)
         56% (100% correct, 12% performance)
         """
-        def intersect(ja, jb, ka, kb):
-            return ka <= jb or jb >= ka or (ka >= ja and kb <= jb)
-
-        print(A)
         minmax = []
         for k, v in enumerate(A):
             minmax.append([k-v, k+v])
         minmax.sort()
-        print(minmax)
-
-        import itertools
 
         count = 0
         for j, k in itertools.combinations(minmax, 2):
-            print(j, k)
-            if intersect(*(j + k)):
+            if self._intersect(*(j + k)):
                 count += 1
         return count
+
+    def _intersect(self, ja, jb, ka, kb):
+            return ka <= jb or jb >= ka or (ka >= ja and kb <= jb)
 
     def fast_solution(self, A):
         """

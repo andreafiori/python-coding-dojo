@@ -1,5 +1,5 @@
 """
-URL: https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+CyclicRotation | https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 
 An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).
 
@@ -41,7 +41,7 @@ In your solution, focus on correctness. The performance of your solution will no
 """
 
 class CyclicRotation:
-    def rotate(self, a, k: int):
+    def rotate(self, a: list[int], k: int) -> list[int]:
         """
         Rotate the array A by k steps
         :param a: an array of integers

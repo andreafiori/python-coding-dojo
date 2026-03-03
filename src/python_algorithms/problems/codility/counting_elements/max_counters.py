@@ -84,7 +84,7 @@ class MaxCounters:
     # MAX_INT = 100000
     # INT_RANGE = (1, MAX_INT)
 
-    def solution(self, N, A):
+    def solution(self, N: int, A):
         """
         :param N: integer - the number of counters
         :param A: a sequence of integers specifying which counter to increase
