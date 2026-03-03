@@ -8,6 +8,8 @@ def missing_integer():
     return MissingInteger()
 
 class TestMissingInteger:
+    N_RANGE = (1, 100000)
+    ELEMENT_RANGE = (-2147483648, 2147483647)
 
     def test_example(self, missing_integer):
         X = [1, 3, 6, 4, 1, 2]
@@ -24,7 +26,7 @@ class TestMissingInteger:
         assert missing_integer.solution([1000, -1, 10, 3, -5, 2, 11, 59, 1]) == 4
 
     def test_extreme_min_max_int(self, missing_integer):
-        assert missing_integer.solution([MissingInteger.ELEMENT_RANGE[0], MissingInteger.ELEMENT_RANGE[1], -10]) == 1
+        assert missing_integer.solution([self.ELEMENT_RANGE[0], self.ELEMENT_RANGE[1], -10]) == 1
 
     # def test_positive_only(self):
     #     arr = range(1, 101) + range(102, 201)
@@ -54,5 +56,5 @@ class TestMissingInteger:
     #     assert self.missing_integer.solution(arr) == missing_int
 
     # def test_monster_positive(self, missing_integer):
-    #     arr = [random.randint(*MissingInteger.ELEMENT_RANGE) for _ in range(1, MissingInteger.N_RANGE[1])]
+    #     arr = [random.randint(*self.ELEMENT_RANGE) for _ in range(1, self.N_RANGE[1])]
     #     random.shuffle(arr)

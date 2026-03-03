@@ -1,7 +1,7 @@
 """
 Maintains a list of dependents and notifies them of any state changes.
-"""
 
+"""
 
 class Subject:
     def __init__(self):
@@ -38,11 +38,9 @@ class Data(Subject):
         self._data = value
         self.notify()
 
-
 class HexViewer:
     def update(self, subject):
         print('HexViewer: Subject {} has data 0x{:x}'.format(subject.name, subject.data))
-
 
 class DecimalViewer:
     def update(self, subject):

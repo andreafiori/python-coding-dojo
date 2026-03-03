@@ -55,11 +55,10 @@ Complexity:
 
 Elements of input arrays can be modified.
 """
-class PermCheck:
-    # ARR_RANGE = (1, 100000)
-    # INT_RANGE = (1, 1000000000)
 
-    def solution(self, A):
+class PermCheck:
+
+    def solution(self, A: list[int]) -> list[int]:
         """
         :param A: a list of integers
         :return: true if the list is a permutation (sequence from 1 to N)
@@ -81,7 +80,8 @@ class PermCheck:
             return 0
 
         # ok, see if they're all there
-        for num in range(1, len(A) + 1):
+        rangeLenItem = len(A) + 1
+        for num in range(1, rangeLenItem):
             if num not in hits:
                 return 0
 
