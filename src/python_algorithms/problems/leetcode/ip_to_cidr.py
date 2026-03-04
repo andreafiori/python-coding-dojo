@@ -1,4 +1,8 @@
 """
+IP to CIDR | https://leetcode.com/problems/ip-to-cidr/
+
+A CIDR block is a compact representation of a range of IP addresses. It is represented as a string in the format "a.b.c.d/x", where "a.b.c.d" is the base IP address and "x" is the number of leading bits in the subnet mask. The subnet mask determines how many IP addresses are included in the CIDR block.
+
 """
 
 class IpToCidr:

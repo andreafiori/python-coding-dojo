@@ -17,7 +17,7 @@ def selection_sort(array):
             array[minimum_index], array[i] = array[i], array[minimum_index]
     return (f'{array} \nNumber of comparisons = {count}')
 
-array = [5,9,3,10,45,2,0] 
+array = [5,9,3,10,45,2,0]
 print(selection_sort(array))
 '''
 [5, 9, 3, 10, 45, 2, 0]
@@ -26,7 +26,7 @@ print(selection_sort(array))
 [0, 2, 3, 10, 45, 9, 5]
 [0, 2, 3, 5, 45, 9, 10]
 [0, 2, 3, 5, 9, 45, 10]
-[0, 2, 3, 5, 9, 10, 45] 
+[0, 2, 3, 5, 9, 10, 45]
 Number of comparisons = 21
 '''
 sorted_array = [5,6,7,8,9]

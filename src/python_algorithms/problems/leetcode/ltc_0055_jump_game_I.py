@@ -1,3 +1,7 @@
+"""
+Jump game | https://leetcode.com/problems/jump-game/
+"""
+
 class JumpGame:
     def canJump(self, nums):
         """
@@ -5,7 +9,6 @@ class JumpGame:
         :rtype: bool
         """
         # greedy
-        # https://leetcode.com/articles/jump-game/
         length = len(nums)
         begin = length - 1
         for i in reversed(range(length - 1)):

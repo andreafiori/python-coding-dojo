@@ -1,11 +1,12 @@
 """
+Jump game | https://leetcode.com/problems/jump-game-ii/
 
 """
 
 from typing import List
 
 class JumpGameII:
-    def jump(self, nums: List[int]):
+    def jump(self, nums: List[int]) -> int:
         """
         :type nums: List[int]
         :rtype: int

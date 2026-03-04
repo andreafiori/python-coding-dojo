@@ -1,4 +1,23 @@
-class Solution:
+"""
+Largest Palindrome Product | https://leetcode.com/problems/largest-palindrome-product/
+
+Given an integer n, return the largest palindromic integer that can be represented as the product of two n-digits integers. Since the answer can be very large, return it modulo 1337.
+
+Example 1:
+    Input: n = 2
+    Output: 987
+    Explanation: 99 x 91 = 9009, 9009 % 1337 = 987
+
+Example 2:
+    Input: n = 1
+    Output: 9
+
+Constraints:
+    1 <= n <= 8
+
+"""
+
+class LongestPalindromeProduct:
     # def largestPalindrome(self, n):
     #     """
     #     :type n: int
@@ -6,7 +25,6 @@ class Solution:
     #     """
     #     if n == 1:
     #         return 9
-    #     # https://leetcode.com/problems/largest-palindrome-product/discuss/96297/Java-Solution-using-assumed-max-palindrom
     #     upperBound = 10 ** n - 1
     #     lowerBound = upperBound / 10
     #     maxNum = upperBound * upperBound
@@ -24,9 +42,7 @@ class Solution:
     #         firstHalf -= 1
     #     return palindrom % 1337
 
-    def largestPalindrome(self, n):
-        # https://leetcode.com/problems/largest-palindrome-product/discuss/96305/Python-Solution-Using-Math-In-48ms
-        # https://leetcode.com/problems/largest-palindrome-product/discuss/96294/could-any-python-experts-share-their-codes-within-100ms
+    def findLargestPalindrome(self, n: int) -> int:
         if n == 1:
             return 9
         for a in range(2, 9 * 10 ** (n - 1)):

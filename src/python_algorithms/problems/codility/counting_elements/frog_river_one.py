@@ -73,8 +73,7 @@ Elements of input arrays can be modified.
 """
 
 class FrogRiverOne:
-    # N_RANGE = (1, 100000)
-    def solution(self, X, A):
+    def solution(self, X: int, A: list[int]) -> int:
         """
         :param X: an integer. the frogs destination
         :param A: non-empty list of integers
