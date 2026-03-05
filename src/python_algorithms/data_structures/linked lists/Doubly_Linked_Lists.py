@@ -1,13 +1,15 @@
-#Doubly linked lists are just normal, singly linked lists with one added feature,
-#a link to the previous node as well in addition to a link to the next node.
-#Although the worst case time complexities of all operations in a doubly linked list are same as that of a singly linked list,
-#Some operations are technically faster. For example, lookup or searching, is O(n/2) as search can begin from both ends
-#But O(n/2) = O(n), so it is still the same as that for a singly linked list.
+"""
+Doubly linked lists are just normal, singly linked lists with one added feature,
+a link to the previous node as well in addition to a link to the next node.
+Although the worst case time complexities of all operations in a doubly linked list are same as that of a singly linked list,
+Some operations are technically faster. For example, lookup or searching, is O(n/2) as search can begin from both ends
+But O(n/2) = O(n), so it is still the same as that for a singly linked list.
 
-#Implementation of doubly linked list is almost exactly the same as that for singly linked list,
-#With just the added feature of the pointer to the previous node.
-#We'll have the same methods which do the exact same thing. The pars which will be different from the singly linked list are explained
-#So lets implement it.
+Implementation of doubly linked list is almost exactly the same as that for singly linked list,
+With just the added feature of the pointer to the previous node.
+We'll have the same methods which do the exact same thing. The pars which will be different from the singly linked list are explained
+So lets implement it.
+"""
 
 class Node():
     def __init__(self, data):
@@ -31,8 +33,6 @@ class DoublyLinkedList():
             while current_node!= None:
                 print(current_node.data, end= ' ')
                 current_node = current_node.next
-        print()
-
 
     def append(self, data):
         new_node = Node(data)
@@ -61,7 +61,6 @@ class DoublyLinkedList():
             self.head = new_node #Finally we update the head
             self.length += 1
             return
-
 
     def insert(self, position, data):
         if position == 0:
@@ -145,57 +144,54 @@ class DoublyLinkedList():
 
 #I'll create a Doubly linked list and call all its methods in the same sequence as I did in the Singly Linked List implementation
 #The answers should come out to be the same
-my_linked_list = DoublyLinkedList()
-my_linked_list.print_list()
-#Empty
+# my_linked_list = DoublyLinkedList()
+# my_linked_list.print_list()
+# #Empty
 
-my_linked_list.append(5)
-my_linked_list.append(2)
-my_linked_list.append(9)
-my_linked_list.print_list()
-#5 2 9
+# my_linked_list.append(5)
+# my_linked_list.append(2)
+# my_linked_list.append(9)
+# my_linked_list.print_list()
+# #5 2 9
 
-my_linked_list.prepend(4)
-my_linked_list.print_list()
-#4 5 2 9
+# my_linked_list.prepend(4)
+# my_linked_list.print_list()
+# #4 5 2 9
 
-my_linked_list.insert(2,7)
-my_linked_list.print_list()
-#4 5 7 2 9
+# my_linked_list.insert(2,7)
+# my_linked_list.print_list()
+# #4 5 7 2 9
 
-my_linked_list.insert(0,0)
-my_linked_list.insert(6,0)
-my_linked_list.insert(9,3)
-my_linked_list.print_list()
-#This position is not available. Inserting at the end of the list
-#0 4 5 7 2 9 0 3
+# my_linked_list.insert(0,0)
+# my_linked_list.insert(6,0)
+# my_linked_list.insert(9,3)
+# my_linked_list.print_list()
+# #This position is not available. Inserting at the end of the list
+# #0 4 5 7 2 9 0 3
 
-my_linked_list.delete_by_value(3)
-my_linked_list.print_list()
-#0 4 5 7 2 9 0
+# my_linked_list.delete_by_value(3)
+# my_linked_list.print_list()
+# #0 4 5 7 2 9 0
 
-my_linked_list.delete_by_value(0)
-my_linked_list.print_list()
-#4 5 7 2 9 0
+# my_linked_list.delete_by_value(0)
+# my_linked_list.print_list()
+# #4 5 7 2 9 0
 
-my_linked_list.delete_by_position(3)
-my_linked_list.print_list()
-#4 5 7 9 0
+# my_linked_list.delete_by_position(3)
+# my_linked_list.print_list()
+# #4 5 7 9 0
 
-my_linked_list.delete_by_position(0)
-my_linked_list.print_list()
-#5 7 9 0
+# my_linked_list.delete_by_position(0)
+# my_linked_list.print_list()
+# #5 7 9 0
 
-my_linked_list.delete_by_position(8)
-my_linked_list.print_list()
-#5 7 9
+# my_linked_list.delete_by_position(8)
+# my_linked_list.print_list()
+# #5 7 9
 
-my_linked_list.delete_by_value(3)
-my_linked_list.print_list()
-#Given value not found.
+# my_linked_list.delete_by_value(3)
+# my_linked_list.print_list()
+# #Given value not found.
 
-print(my_linked_list.length)
-#3
-
-
-#The answers are all same. Meaning our doubly linked list works properly
+# print(my_linked_list.length)
+# #3

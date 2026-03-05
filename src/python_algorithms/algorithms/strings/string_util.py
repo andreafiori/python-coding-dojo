@@ -1,6 +1,7 @@
 """
 String Utils
 """
+
 class StringUtil:
     def __init__(self):
         pass

@@ -1,6 +1,8 @@
-#Merge Sort uses the Divide and Conquer approach. It involves breaking up the array from the middle until
-#Arrays of only 1 elements remain and thein merging them back up in a sorted order.
-#Time complexity is O(nlog N) and space complexity is O(n)
+"""
+Merge Sort uses the Divide and Conquer approach. It involves breaking up the array from the middle until
+Arrays of only 1 elements remain and thein merging them back up in a sorted order.
+Time complexity is O(nlog N) and space complexity is O(n)
+"""
 
 count = 0
 

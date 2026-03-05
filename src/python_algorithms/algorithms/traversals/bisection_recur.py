@@ -1,3 +1,7 @@
+"""
+Bisection search is a searching algorithm that works on sorted lists. It repeatedly divides the list in half until it finds the target value or determines that it is not present in the list.
+"""
+
 class BisectionRecur:
     def bisection_recur(self, n, arr, start, stop):
 

@@ -5,6 +5,25 @@ Defines the skeleton of a base algorithm, deferring definition of exact
 steps to subclasses.
 """
 
+"""
+>>> template_function(get_text, to_save=True)
+Got `plain-text`
+Skip conversion
+[SAVE]
+`plain-text` was processed
+
+>>> template_function(get_pdf, converter=convert_to_text)
+Got `pdf`
+[CONVERT]
+`pdf as text` was processed
+
+>>> template_function(get_csv, to_save=True)
+Got `csv`
+Skip conversion
+[SAVE]
+`csv` was processed
+"""
+
 class Template:
     @staticmethod
     def get_text():
@@ -41,23 +60,3 @@ class Template:
             Template.saver()
 
         return "`{}` was processed".format(data)
-
-
-"""
->>> template_function(get_text, to_save=True)
-Got `plain-text`
-Skip conversion
-[SAVE]
-`plain-text` was processed
-
->>> template_function(get_pdf, converter=convert_to_text)
-Got `pdf`
-[CONVERT]
-`pdf as text` was processed
-
->>> template_function(get_csv, to_save=True)
-Got `csv`
-Skip conversion
-[SAVE]
-`csv` was processed
-"""

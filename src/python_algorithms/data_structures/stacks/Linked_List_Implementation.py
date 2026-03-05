@@ -70,32 +70,29 @@ class Stack():
                 print(current_pointer.data)
                 current_pointer = current_pointer.next
 
+# my_stack = Stack()
+# print(my_stack.peek())
+# #None
 
-my_stack = Stack()
-print(my_stack.peek())
-#None
+# my_stack.push('google')
+# my_stack.push('udemy')
+# my_stack.push('discord')
+# my_stack.print_stack()
+# #discord
+# #udemy
+# #google
 
-my_stack.push('google')
-my_stack.push('udemy')
-my_stack.push('discord')
-my_stack.print_stack()
-#discord
-#udemy
-#google
+# print(my_stack.top.data)
+# #discord
 
-print(my_stack.top.data)
-#discord
+# print(my_stack.bottom.data)
+# #google
 
-print(my_stack.bottom.data)
-#gogle
+# my_stack.pop()
+# my_stack.print_stack()
 
-my_stack.pop()
-my_stack.print_stack()
-#udemy
-#google
-
-my_stack.pop()
-my_stack.pop()
-my_stack.print_stack()
+# my_stack.pop()
+# my_stack.pop()
+# my_stack.print_stack()
 #Stack Empty
 

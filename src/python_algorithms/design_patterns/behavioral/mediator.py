@@ -5,16 +5,16 @@ This reduces the dependencies between communicating objects, thereby reducing co
 Encapsulates how a set of objects interact.
 """
 
-
 class ChatRoom:
     """Mediator class"""
     @staticmethod
     def display_message(user, message):
         return "[{} says]: {}".format(user, message)
 
-
 class User:
-    """A class whose instances want to interact with each other"""
+    """
+    A class whose instances want to interact with each other
+    """
 
     def __init__(self, name):
         self.name = name

@@ -3,17 +3,15 @@ A class that uses different static function depending of a parameter passed in i
 Note the use of a single dictionary instead of multiple conditions.
 """
 
-
 class Catalog:
     """
     Catalog of multiple static methods that are executed depending on an init parameter
     """
-
-
     def __init__(self, param):
-        # dictionary that will be used to determine which static method is
-        # to be executed but that will be also used to store possible param
-        # value
+        """
+        Dictionary that will be used to determine which static method is
+        To be executed but that will be also used to store possible param
+        """
         self._static_method_choices = {'param_value_1': self._static_method_1, 'param_value_2': self._static_method_2}
 
         # simple test to validate param value

@@ -6,6 +6,6 @@ def insertion_sort(arr):
                 arr[j], arr[j-1] = arr[j-1], arr[j]
                 j -= 1
 
-l = [6,1,8,4,10]
-insertion_sort(l)
-print(l)
+# l = [6,1,8,4,10]
+# insertion_sort(l)
+# print(l)

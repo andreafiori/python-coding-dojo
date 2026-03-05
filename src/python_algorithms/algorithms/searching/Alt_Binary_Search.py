@@ -1,12 +1,12 @@
 """
+alternative binary search
+- based on "efficient iteration"
+- make jumps and slow down as we get close to target
+- time complexity => O(logn)
 """
-# alternative binary search
-# - based on "efficient iteration"
-# - make jumps and slow down as we get close to target 
-# - time complexity => O(logn)
 
 class AltBinarySearch:
-    def bsearch_alt(self, target, arr):
+    def bsearch_alt(self, target: int, arr: list[int]) -> int:
         n = len(arr)
         k = 0
         i = n // 2

@@ -1,3 +1,7 @@
+"""
+Hash tables are a data structure that store key-value pairs. They are also known as hash maps or dictionaries. They are used to store and retrieve data in constant time, O(1). The hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
+"""
+
 class AlgoHashTable:
 
     def __init__ (self, size):
@@ -11,7 +15,6 @@ class AlgoHashTable:
         return "".join(str(item) for item in self.hash_table)
 
 
-    
     def set_val(self, key, value):
 
         hashed_key = hash(key)%self.size
@@ -27,16 +30,15 @@ class AlgoHashTable:
 
         if found_key:
             bucket[index] = (key, value)
-        
-        else: 
+
+        else:
             bucket.append((key, value))
 
     def get_val(self, key):
-        
         hashed_key = hash(key)%self.size
         bucket = self.hash_table[hashed_key]
         found_key = False
-        
+
         for index, record in enumerate(bucket):
             record_key, record_value = record
             if record_key == key:
@@ -45,29 +47,18 @@ class AlgoHashTable:
 
         if found_key:
             return record_value
-        
-        else: 
+
+        else:
             return f"{key} not found"
 
+# hash_table = AlgoHashTable(200)
+# file = open("data.txt")
+# lines = file.readline().strip().split(':')
 
+# for line in file:
+#     key, value = line.split(":")
+#     hash_table.set_val(key, value)
 
-
-hash_table = AlgoHashTable(200)
-
-file = open("data.txt")
-
-lines = file.readline().strip().split(':')
-
-for line in file:
-    key, value = line.split(":")
-    hash_table.set_val(key, value)
-
-
-print(hash_table)
-
-print("-"*100)
-
-print(hash_table.get_val("ahlrdmukjn@yaexample.com"))
-
-
-
+# print(hash_table)
+# print("-"*100)
+# print(hash_table.get_val("mymail@yaexample.com"))

@@ -1,8 +1,7 @@
 """
 Reference: http://www.slideshare.net/ishraqabd/publish-subscribe-model-overview-13368808
-Author: https://github.com/HanWenfang
-"""
 
+"""
 
 class Provider:
     def __init__(self):
@@ -45,4 +44,4 @@ class Subscriber:
         self.provider.unsubscribe(msg, self)
 
     def run(self, msg):
-        print("{} got {}".format(self.name, msg))
+        return "{} got {}".format(self.name, msg)
