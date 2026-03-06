@@ -1,5 +1,5 @@
 import unittest
-from src.design_patterns.behavioral.chaining_method import Action, Person
+from python_algorithms.design_patterns.behavioral.chaining_method import Action, Person
 
 class ChainingMethodTest(unittest.TestCase):
     def setUp(self) -> None:

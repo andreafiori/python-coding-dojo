@@ -3,7 +3,7 @@ from time import time
 import unittest
 from io import StringIO
 
-from src.design_patterns.structural.proxy import Proxy
+from python_algorithms.design_patterns.structural.proxy import Proxy
 
 
 class ProxyTest(unittest.TestCase):

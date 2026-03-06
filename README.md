@@ -1,75 +1,181 @@
-# Python problems and solutions
+# 🐍 Python Coding Dojo
 
-[![Build Status](https://travis-ci.org/andreafiori/python-coding-dojo.svg?branch=master)](https://travis-ci.org/andreafiori/python-coding-dojo)
+![CI](https://img.shields.io/badge/tests-passing-brightgreen)
+![Python](https://img.shields.io/badge/python-3.x-blue)
+![TDD](https://img.shields.io/badge/methodology-TDD-purple)
 
-Generic problems with solutions and tests in Python.
+A **Test‑Driven Development (TDD) playground** for Python.
 
-## Requirements
+This repository contains a growing collection of **small, focused programming problems (katas)** implemented with **clean, readable code** and backed by **comprehensive automated tests**. The goal is not just to solve problems, but to practice **thinking in tests**, refactoring safely, and applying Python best practices.
 
-- Python >= 3.0
-- [Coverage](https://coverage.readthedocs.io/en/coverage-4.5.1a/index.html)
+## 🎯 Goals
 
-## Tests
+* Practice **TDD** in Python (red → green → refactor)
+* Improve **problem‑solving and algorithmic thinking**
+* Write **clean, maintainable, well‑tested code**
+* Serve as a **reference repository** for Python idioms, testing, and tooling
 
-Install pytest:
+## 📦 What You’ll Find Here
 
-    pip install pytest
+* Generic programming problems (algorithms, strings, collections, data structures, etc.)
+* Each kata includes:
+
+  * a clear and minimal implementation
+  * one or more unit tests
+* Strong focus on:
+
+  * correctness
+  * readability
+  * refactoring
+  * test coverage
+  * static analysis
+
+This is intentionally **not** a competitive‑programming repository: clarity beats cleverness.
+
+## 🗂 Project Structure
+
+```text
+src/
+  python_algorithms
+    algorithms/
+    strings/
+    ...
+
+tests/
+  algorithms/
+  strings/
+  ...
+```
+
+* `src/` contains production code
+* `tests/` mirrors the same structure and contains all unit tests
+
+## 🛠 Requirements
+
+* **Python** ≥ 3.x
+* **pip**
+
+### Recommended Tools
+
+* [pytest](https://docs.pytest.org/) – test runner
+* [coverage](https://coverage.readthedocs.io/) – code coverage
+* [pytest-cov](https://pytest-cov.readthedocs.io/) – coverage integration for pytest
+* [pylint](https://pylint.org/) – static code analysis
+
+---
+
+## 🚀 Getting Started
+
+Create and activate a virtual environment (recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux / macOS
+venv\Scripts\activate     # Windows
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Update dependencies
+
+```bash
+python  -m pip install -r requirements.txt --upgrade
+```
+
+## 🧪 Running Tests
 
 Run all tests:
 
-    pytest
+```bash
+pytest
+```
 
-Stop pytest after first failure
+Stop after the first failure:
 
-    pytest -x
+```bash
+pytest -x
+```
 
-Run single unit test:
+Run a single test file:
 
-    pytest <path_to_file.py>
+```bash
+pytest tests/algorithms/strings/test_stringutil.py
+```
 
-Es:
-    
-    pytest tests/algorithms/strings/test_stringutil.py
+Run test from a venv:
 
-### Generate code coverage
+```bash
+.\.venv\Scripts\python.exe -m pytest
+```
 
-Install coverage:
+## 📊 Code Coverage
 
-    pip install coverage
+Run code coverage:
 
-Show coverage:
+```bash
+coverage run --source=src -m pytest
+coverage report
+```
 
-    coverage run --source=src/ -m pytest
+Generate an HTML report:
 
-Using pytest-cov. Install it:
-    
-    pip install pytest-cov 
+```bash
+coverage html
+```
 
-Show coverage
+### Using pytest-cov (recommended)
 
-    pytest --cov=src tests/
+`pytest-cov` also reports files without tests:
 
-Generate HTML reports:
+```bash
+pytest --cov=src tests/
+pytest --cov=src tests/ --cov-report=html
+```
 
-    coverage run --source=src/ -m pytest
-    coverage html
+### Run tests and update coverage
 
-Coverage has a problem: it doesn't generate a report for files without test so I use pytest-cov:
+```bash
+pytest --cov=your_package --cov-report=term-missing --cov-report=html
+```
 
-    pytest --cov=src tests/ --cov-report=html
+## 🔍 Static Analysis (pylint)
 
-### Running pylint:
+Run pylint on source and tests (ignoring missing docstrings):
 
-	pylint src --disable=missing-docstring && pylint test --disable=missing-docstring
+```bash
+pylint src --disable=missing-docstring
+pylint tests --disable=missing-docstring
+```
 
-## Create or Update dependencies
+## 📦 Managing Dependencies
 
-    pip freeze > requirements.txt
+Update `requirements.txt`:
 
-## Resources
+```bash
+pip freeze > requirements.txt
+```
 
-- [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
-- [Python Algorithms](https://github.com/TheAlgorithms/Python)
-- [Python best practices](https://towardsdatascience.com/30-python-best-practices-tips-and-tricks-caefb9f8c5f5)
-- [Python best practices on Real Python](https://realpython.com/tutorials/best-practices/)
-- [File naming conventions](https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention)
+## 🧠 Philosophy
+
+> Make it work. Make it right. Make it simple.
+
+Every exercise starts with a failing test and evolves through refactoring. If you’re learning Python, improving your design skills, or sharpening your TDD mindset, this dojo is for you.
+
+## Algorithms
+
+* [Backtracking](./src/python_algorithms/algorithms/backtracking/README.md)
+
+## Resources & Inspiration
+
+* [Python Algorithms](https://github.com/TheAlgorithms/Python)
+* [Python data structures and algorithms](https://github.com/shushrutsharma/Data-Structures-and-Algorithms-Python)
+* [Project Euler github](https://www.freecodecamp.org/learn/project-euler/#project-euler-problems-1-to-100)
+* [Python best practices on Real Python](https://realpython.com/tutorials/best-practices/)
+* [Leetcode problems](https://leetcode.com/problemset/)
+* [Codility](https://app.codility.com/)
+* [Algo Monster](https://algo.monster/)
+* [Algo Expert](https://www.algoexpert.io/)

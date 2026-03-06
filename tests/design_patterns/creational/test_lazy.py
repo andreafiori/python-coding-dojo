@@ -1,6 +1,6 @@
 from __future__ import print_function
 import unittest
-from src.design_patterns.creational.lazy_evaluation import Person
+from python_algorithms.design_patterns.creational.lazy_evaluation import Person
 
 
 class TestDynamicExpanding(unittest.TestCase):

@@ -1,13 +1,15 @@
-import unittest
-from src.algorithms.strings.balanced_parentheses import BalancedParentheses
+import pytest
 
+from python_algorithms.algorithms.strings.balanced_parentheses import BalancedParentheses
 
-class BalancedParenthesisTest(unittest.TestCase):
-    def setUp(self):
-        self.bal = BalancedParentheses()
+@pytest.fixture
+def balanced_parentheses():
+    """Provide a fresh BalancedParentheses instance for each test."""
+    return BalancedParentheses()
 
-    def test_check(self):
-        self.assertTrue(self.bal.check('((()))'))
+class TestBalancedParenthesis:
+    def test_check(self, balanced_parentheses):
+        assert balanced_parentheses.check('((()))')
 
-    def test_check_fails(self):
-        self.assertFalse(self.bal.check('(()'))
+    def test_check_fails(self, balanced_parentheses):
+        assert not balanced_parentheses.check('(()')
