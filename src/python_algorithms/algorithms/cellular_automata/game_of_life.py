@@ -1,31 +1,21 @@
-"""Conway's Game Of Life, Author Anurag Kumar(mailto:anuragkumarak95@gmail.com)
+"""
+Conway's Game Of Life
 
 Requirements:
-  - numpy
-  - random
-  - time
-  - matplotlib
-
-Python:
-  - 3.5
+    - numpy
+    - random
+    - time
+    - matplotlib
 
 Usage:
-  - $python3 game_of_life <canvas_size:int>
+    - $python3 game_of_life <canvas_size:int>
 
 Game-Of-Life Rules:
 
- 1.
- Any live cell with fewer than two live neighbours
- dies, as if caused by under-population.
- 2.
- Any live cell with two or three live neighbours lives
- on to the next generation.
- 3.
- Any live cell with more than three live neighbours
- dies, as if by over-population.
- 4.
- Any dead cell with exactly three live neighbours be-
- comes a live cell, as if by reproduction.
+1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+2. Any live cell with two or three live neighbours lives on to the next generation.
+3. Any live cell with more than three live neighbours dies, as if by over-population.
+4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 """
 
 import random

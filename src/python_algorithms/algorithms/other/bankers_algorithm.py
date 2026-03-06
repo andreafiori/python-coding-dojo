@@ -1,19 +1,13 @@
-# A Python implementation of the Banker's Algorithm in Operating Systems using
-# Processes and Resources
-# {
-# "Author: "Biney Kingsley (bluedistro@github.io), bineykingsley36@gmail.com",
-# "Date": 28-10-2018
-# }
 """
+A Python implementation of the Banker's Algorithm in Operating Systems using
+
 The Banker's algorithm is a resource allocation and deadlock avoidance algorithm
 developed by Edsger Dijkstra that tests for safety by simulating the allocation of
 predetermined maximum possible amounts of all resources, and then makes a "s-state"
 check to test for possible deadlock conditions for all other pending activities,
 before deciding whether allocation should be allowed to continue.
 
-| [Source] Wikipedia
-| [Credit] Rosetta Code C implementation helped very much.
-| (https://rosettacode.org/wiki/Banker%27s_algorithm)
+Rosetta Code C implementation: htps://rosettacode.org/wiki/Banker%27s_algorithm
 """
 
 from __future__ import annotations
@@ -220,9 +214,3 @@ class BankersAlgorithm:
             "Initial Available Resources:       "
             + " ".join(str(x) for x in self.__available_resources())
         )
-
-
-if __name__ == "__main__":
-    import doctest
-
-    doctest.testmod()
